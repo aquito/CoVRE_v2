@@ -1,0 +1,2284 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.19f1 (68f137dc9bbe) revision 6877495'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19043.1288; Version 2009; 64bit' Language: 'en' Physical Memory: 16225 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+C:\Users\KDyte\Desktop\Unity Editors\2020.3.19f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+C:/Users/KDyte/Desktop/GitHub Repos/CoVRE_v2
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+59218
+Successfully changed project path to: C:/Users/KDyte/Desktop/GitHub Repos/CoVRE_v2
+C:/Users/KDyte/Desktop/GitHub Repos/CoVRE_v2
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 307.84 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 4.24 ms.
+Initialize engine version: 2020.3.19f1 (68f137dc9bbe)
+[Subsystems] Discovering subsystems at path C:/Users/KDyte/Desktop/Unity Editors/2020.3.19f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/KDyte/Desktop/GitHub Repos/CoVRE_v2/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) Iris(R) Xe Graphics (ID=0x9a49)
+    Vendor:   
+    VRAM:     8112 MB
+    Driver:   27.20.100.9268
+Initialize mono
+Mono path[0] = 'C:/Users/KDyte/Desktop/Unity Editors/2020.3.19f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Users/KDyte/Desktop/Unity Editors/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Users/KDyte/Desktop/Unity Editors/2020.3.19f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56652
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Users/KDyte/Desktop/Unity Editors/2020.3.19f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.010691 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 263.32 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.38 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  7.520 seconds
+Domain Reload Profiling:
+	ReloadAssembly (7521ms)
+		BeginReloadAssembly (295ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (3ms)
+		EndReloadAssembly (1809ms)
+			LoadAssemblies (288ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (535ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (171ms)
+			SetupLoadedEditorAssemblies (813ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (16ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (264ms)
+				BeforeProcessingInitializeOnLoad (64ms)
+				ProcessInitializeOnLoadAttributes (368ms)
+				ProcessInitializeOnLoadMethodAttributes (99ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.052151 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 267.83 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.33 ms.
+[XR] OculusXRPlugin: registering subsystems
+[XR] Unable to register display lifecyle provider: [1]
+[XR] Oculus Input lifecycle provider registered.
+[XR] Unable to register input lifecyle provider: [1]
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\KDyte\Desktop\GitHub Repos\CoVRE_v2\Library\PackageCache\com.unity.xr.oculus@1.10.0\Runtime\OculusLoader.cs:250 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\KDyte\Desktop\GitHub Repos\CoVRE_v2\Library\PackageCache\com.unity.xr.oculus@1.10.0\Runtime\OculusLoader.cs:235 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00032] in <695d1cc93cca45069c528c15c9fdd749>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00048] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x00047] in <97ba64834c8f4edc84e3d8e30b04f122>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+- Completed reload, in  7.775 seconds
+Domain Reload Profiling:
+	ReloadAssembly (7781ms)
+		BeginReloadAssembly (616ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (16ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (61ms)
+		EndReloadAssembly (6927ms)
+			LoadAssemblies (2647ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (1517ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (198ms)
+			SetupLoadedEditorAssemblies (2218ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (14ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (269ms)
+				BeforeProcessingInitializeOnLoad (412ms)
+				ProcessInitializeOnLoadAttributes (1375ms)
+				ProcessInitializeOnLoadMethodAttributes (117ms)
+				AfterProcessingInitializeOnLoad (31ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (18ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.20 seconds
+Refreshing native plugins compatible for Editor in 2.37 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.34 ms.
+Unloading 3653 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 168.3 MB.
+System memory in use after: 168.4 MB.
+
+Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 4123.
+Total: 14.940300 ms (FindLiveObjects: 0.789900 ms CreateObjectMapping: 0.773800 ms MarkObjects: 12.456400 ms  DeleteObjects: 0.915600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Ancient Modular Tombs/Textures/Hand_torchfire_Metallic.png
+  artifactKey: Guid(a79876967f7f516489ce50d6a4938797) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Hand_torchfire_Metallic.png using Guid(a79876967f7f516489ce50d6a4938797) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df7857b5fe146f93640846a82c26e483') in 0.523955 seconds 
+  Import took 0.550839 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000953 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Vase_1_v2_AO.png
+  artifactKey: Guid(01a05738a37e91e4abe7bf4c5341b7e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Vase_1_v2_AO.png using Guid(01a05738a37e91e4abe7bf4c5341b7e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea2cf67dbc09c004fc146a8bb8940c1b') in 0.078452 seconds 
+  Import took 0.106176 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000909 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Stone_gate_a.psd
+  artifactKey: Guid(84d90296283487247aa44c7b7fe4f82e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Stone_gate_a.psd using Guid(84d90296283487247aa44c7b7fe4f82e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '931937af028b146bf8f59c09c48a2994') in 0.270123 seconds 
+  Import took 0.297621 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000805 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Metal spikes_M.png
+  artifactKey: Guid(adb715cd01f30b54688369622bd243c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Metal spikes_M.png using Guid(adb715cd01f30b54688369622bd243c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46f0dd0fbec43a7fc11df8bfe5687301') in 0.355923 seconds 
+  Import took 0.379107 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001084 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Stone_door_N.png
+  artifactKey: Guid(64c2611aaadbdb644bf3a95876ba2429) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Stone_door_N.png using Guid(64c2611aaadbdb644bf3a95876ba2429) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b55e58c5ed94395cd73c0979d98f6456') in 0.253917 seconds 
+  Import took 0.281160 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001605 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Vase_1_v2_M.png
+  artifactKey: Guid(d0f195a29883b8a4c8c99e6332592c6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Vase_1_v2_M.png using Guid(d0f195a29883b8a4c8c99e6332592c6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44146dbba88be0b577a736c6f0c8d623') in 0.163189 seconds 
+  Import took 0.186098 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000757 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Stairs_n.png
+  artifactKey: Guid(33a903b5d0b9bcd40b27b40697df569e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Stairs_n.png using Guid(33a903b5d0b9bcd40b27b40697df569e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33f1f311ad011e5f2679f390c0371082') in 0.967572 seconds 
+  Import took 0.994616 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000800 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Wall_paintings_2.psd
+  artifactKey: Guid(f48a29105d03aa842bc47f31a9744a8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Wall_paintings_2.psd using Guid(f48a29105d03aa842bc47f31a9744a8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66cb137fa68fd1ddf21e488b1411e333') in 0.126605 seconds 
+  Import took 0.151036 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001039 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Hand_torchfire_AO.png
+  artifactKey: Guid(4e56192e461dcb646b90a875f567da34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Hand_torchfire_AO.png using Guid(4e56192e461dcb646b90a875f567da34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2f7c815ee1cf66751fd78dfcdc0a120') in 0.079009 seconds 
+  Import took 0.102217 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000986 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Arrow_a.psd
+  artifactKey: Guid(d98200174811a58459afe606ae65dfce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Arrow_a.psd using Guid(d98200174811a58459afe606ae65dfce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a171eb7e09c57f33266105f03ac10ddf') in 0.110787 seconds 
+  Import took 0.135751 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000812 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Horus_Normal.png
+  artifactKey: Guid(4468c8040aef71740a27efccffa9adcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Horus_Normal.png using Guid(4468c8040aef71740a27efccffa9adcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa828cfa3a1b7531907babfb390ce473') in 0.263620 seconds 
+  Import took 0.289336 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000839 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Stairs_AO.tga
+  artifactKey: Guid(68405f04500d5e840a69fe7aa9935db5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Stairs_AO.tga using Guid(68405f04500d5e840a69fe7aa9935db5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ebc1f93f54c94e197bfad41d7239285') in 0.125507 seconds 
+  Import took 0.149886 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000830 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Floor_ao.tga
+  artifactKey: Guid(2cec6dabd868fa145be5466eadc63073) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Floor_ao.tga using Guid(2cec6dabd868fa145be5466eadc63073) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3552dc8b0eede2804d8740013db3d395') in 0.122712 seconds 
+  Import took 0.183834 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002194 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Large_Door_Arch_N.psd
+  artifactKey: Guid(5a739c5ac351a154e8ed96ca8d33eb14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Large_Door_Arch_N.psd using Guid(5a739c5ac351a154e8ed96ca8d33eb14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd1949591365cb77e7b3d251f56e451c') in 0.340011 seconds 
+  Import took 0.368675 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000983 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Sandstone_m.tga
+  artifactKey: Guid(e88309195618dc947becbdfc4e1bc4e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Sandstone_m.tga using Guid(e88309195618dc947becbdfc4e1bc4e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d0e30fbd21c6d394bfefdcac64d5b20') in 0.422497 seconds 
+  Import took 0.448155 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000874 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Sandrock_m.tga
+  artifactKey: Guid(bb36b87515815794f86f4251ba6545b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Sandrock_m.tga using Guid(bb36b87515815794f86f4251ba6545b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'baa40d551a0408a82c0337e4dccc5295') in 0.375902 seconds 
+  Import took 0.440552 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000924 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Vase_1_v2_A.png
+  artifactKey: Guid(5f1c32c6988aa9c40828b1cd854ac7f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Vase_1_v2_A.png using Guid(5f1c32c6988aa9c40828b1cd854ac7f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b95da2934e4aedac6e34a9c8e13bcec') in 0.083807 seconds 
+  Import took 0.105267 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000766 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Horus_Albedo.png
+  artifactKey: Guid(c4fc9ebabb323db409950fe22f2f2897) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Horus_Albedo.png using Guid(c4fc9ebabb323db409950fe22f2f2897) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '099de10f05103b425036e0647b2be75d') in 0.249195 seconds 
+  Import took 0.275212 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001034 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Large_Door_Arch_AO.psd
+  artifactKey: Guid(279fa09fbc37ac94cac752d39992e44a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Large_Door_Arch_AO.psd using Guid(279fa09fbc37ac94cac752d39992e44a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8be87daa3aa5d11569d683c1bd526acf') in 0.109665 seconds 
+  Import took 0.133254 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000916 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Smoke.png
+  artifactKey: Guid(096420745a118eb4fbe2fcc74b73ac58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Smoke.png using Guid(096420745a118eb4fbe2fcc74b73ac58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3a7c9524af5c146853e639cf71b5048') in 0.094093 seconds 
+  Import took 0.160963 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000814 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Column_interior_ao.psd
+  artifactKey: Guid(074884e515fda1b4bab47a26b01312f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Column_interior_ao.psd using Guid(074884e515fda1b4bab47a26b01312f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b9958ea8a09c2852bf93efc1c55b67d') in 0.118858 seconds 
+  Import took 0.138710 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000875 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Stone_door_AO.psd
+  artifactKey: Guid(6b3bd97931ffb014bbf0ddedfd3ef180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Stone_door_AO.psd using Guid(6b3bd97931ffb014bbf0ddedfd3ef180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '431f6bdc1f52b983fd0f6b4d83476c51') in 0.150818 seconds 
+  Import took 0.175602 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000889 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Column_small_AO.tga
+  artifactKey: Guid(022101d78f614854db0c111b05b339c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Column_small_AO.tga using Guid(022101d78f614854db0c111b05b339c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edc46a9713fc8297cf4763c944386867') in 0.114615 seconds 
+  Import took 0.143204 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000947 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Door_arch_AO.psd
+  artifactKey: Guid(4355b0eeabcde0045bb66c3effb44ac8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Door_arch_AO.psd using Guid(4355b0eeabcde0045bb66c3effb44ac8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef85ec19fd8c0960786f3ca365c386cf') in 0.112511 seconds 
+  Import took 0.133725 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000730 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Rock_2_N.psd
+  artifactKey: Guid(4f891b66afb8d6a4ebb1cb57e9f5dca5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Rock_2_N.psd using Guid(4f891b66afb8d6a4ebb1cb57e9f5dca5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2e67d6ba7513a845e789f0ca91c29b4') in 0.225678 seconds 
+  Import took 0.244831 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000704 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Hand_torchfire_Albedo.png
+  artifactKey: Guid(aa8f148a1fc8c2342a58a23a8f509ee9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Hand_torchfire_Albedo.png using Guid(aa8f148a1fc8c2342a58a23a8f509ee9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5c1f0b953cf22817ee4f678cee6e108') in 0.123016 seconds 
+  Import took 0.144571 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000688 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Ornament_a_v2.psd
+  artifactKey: Guid(19e1d44b98a5129438de166a640d6ec2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Ornament_a_v2.psd using Guid(19e1d44b98a5129438de166a640d6ec2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bc4968b523f31bc4725cf1cc0d1851d') in 0.074862 seconds 
+  Import took 0.100339 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001122 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Pyramid_ao.png
+  artifactKey: Guid(7d844140288befd49a9f91545fffc9f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Pyramid_ao.png using Guid(7d844140288befd49a9f91545fffc9f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c6719a199e1f7a250ef6de5930f7a58') in 0.115364 seconds 
+  Import took 0.140064 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000933 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/SandRock_A.png
+  artifactKey: Guid(a84f07ac6727f814a8bbf6d8bc8a2767) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/SandRock_A.png using Guid(a84f07ac6727f814a8bbf6d8bc8a2767) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7920ff91e499cfeb8857357d0b76f1b2') in 0.139267 seconds 
+  Import took 0.166946 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000738 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Torchfire_Metall_N.png
+  artifactKey: Guid(ccbd4213d6497d04ca7534b5eacddf9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Torchfire_Metall_N.png using Guid(ccbd4213d6497d04ca7534b5eacddf9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c5e73f9eaa37a2dfc2b76431aac5cf4') in 0.278005 seconds 
+  Import took 0.339851 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000951 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Vase_1_v1_AO.png
+  artifactKey: Guid(358e17d2b57837b4da7feb5b56c3618f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Vase_1_v1_AO.png using Guid(358e17d2b57837b4da7feb5b56c3618f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de78d059d65733ab36b619f3f772c14b') in 0.073781 seconds 
+  Import took 0.102516 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001049 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Ornaments_N.psd
+  artifactKey: Guid(9acc85dd0f806904e9f18bed21148f4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Ornaments_N.psd using Guid(9acc85dd0f806904e9f18bed21148f4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63cde2030bfd6e0c58103f3bb2cf53db') in 0.106877 seconds 
+  Import took 0.136063 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000937 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Column_Ambient Occlusion.png
+  artifactKey: Guid(c40b3c489c85df3419e2e0fccacdcd1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Column_Ambient Occlusion.png using Guid(c40b3c489c85df3419e2e0fccacdcd1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91b4bb2188aef77987e1f19b5df8fe4d') in 0.111365 seconds 
+  Import took 0.138546 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000757 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Metal spikes_Normal.png
+  artifactKey: Guid(e2ec2899a95f1514d9042320c2acd2eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Metal spikes_Normal.png using Guid(e2ec2899a95f1514d9042320c2acd2eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfa6417fd92300ca7bd80eaa2e11d5ed') in 0.240293 seconds 
+  Import took 0.314680 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001128 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Vase_1_v2_N.png
+  artifactKey: Guid(4c8ab0de0332da3428aa9b991fdf380a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Vase_1_v2_N.png using Guid(4c8ab0de0332da3428aa9b991fdf380a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1be452547551ae8e7ed62bc061710241') in 0.155622 seconds 
+  Import took 0.180300 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000694 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Fire.tga
+  artifactKey: Guid(3b00f46f777ede34aa848522a8cfec9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Fire.tga using Guid(3b00f46f777ede34aa848522a8cfec9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f102f2ff10ad247d436e7ef429933b9b') in 0.098693 seconds 
+  Import took 0.162911 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000820 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Wall_paintings_3.psd
+  artifactKey: Guid(f42c9e2efd21c784aa67e8843cdd2182) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Wall_paintings_3.psd using Guid(f42c9e2efd21c784aa67e8843cdd2182) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcc617dddedc5c83ba865cc8c2141b78') in 0.114281 seconds 
+  Import took 0.135866 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000894 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Ceiling_N.png
+  artifactKey: Guid(a01eae5bdf9aecf4bbb02c6b065c7c07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Ceiling_N.png using Guid(a01eae5bdf9aecf4bbb02c6b065c7c07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '778e7d4555a4dc7efcfa6f35a9c9a059') in 0.102134 seconds 
+  Import took 0.164190 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000732 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Pyramid_enter_metallic.tga
+  artifactKey: Guid(b2ea9e7d229924d4dafa4e188f82d81a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Pyramid_enter_metallic.tga using Guid(b2ea9e7d229924d4dafa4e188f82d81a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e933221e1d45d91c04827321f79e914c') in 0.263008 seconds 
+  Import took 0.323738 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000820 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Sandstone_A.psd
+  artifactKey: Guid(8ca8e1b0d7c6df642bfd7047d0842c5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Sandstone_A.psd using Guid(8ca8e1b0d7c6df642bfd7047d0842c5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '168d9f5c93847114a30d06cf30f0d7b8') in 0.205133 seconds 
+  Import took 0.265150 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000657 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Torchfire_a.psd
+  artifactKey: Guid(f00578146271d4f42892eb33a0aa006d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Torchfire_a.psd using Guid(f00578146271d4f42892eb33a0aa006d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ceeee72bfba15d00be760cb10b6129b0') in 0.121089 seconds 
+  Import took 0.146774 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000918 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Anubis_statue_Metallic.png
+  artifactKey: Guid(d09105562f165e74cb4f6b82e2e10dea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Anubis_statue_Metallic.png using Guid(d09105562f165e74cb4f6b82e2e10dea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5820cc4452f3baaaa19a5079ac0bbda6') in 0.305790 seconds 
+  Import took 0.326128 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000794 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Anubis_statue_Albedo.png
+  artifactKey: Guid(463c6962a6d517547aeaf22cecb20af7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Anubis_statue_Albedo.png using Guid(463c6962a6d517547aeaf22cecb20af7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a391ec2a6361f8a5e8ef7c3382325fbd') in 0.215422 seconds 
+  Import took 0.273330 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000844 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Anubis_statue_AO.png
+  artifactKey: Guid(3ff53474fc05c304ab502dbbd735bab1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Anubis_statue_AO.png using Guid(3ff53474fc05c304ab502dbbd735bab1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7121974c39ded0af1406e206449e0921') in 0.072636 seconds 
+  Import took 0.095291 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001080 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Floor_n.tga
+  artifactKey: Guid(e3e50d0582eab7a4a8cb276f1827f281) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Floor_n.tga using Guid(e3e50d0582eab7a4a8cb276f1827f281) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbb57252aea83f0f043f5429c94aeb78') in 0.139442 seconds 
+  Import took 0.162707 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000628 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Wall_detail_n.tga
+  artifactKey: Guid(fe5c9280550ea1f4fb351d62a04e0ff9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Wall_detail_n.tga using Guid(fe5c9280550ea1f4fb351d62a04e0ff9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08f35a3ecbd394a39d474f2ab9409667') in 0.096094 seconds 
+  Import took 0.153719 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000852 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Torchfire_AO.psd
+  artifactKey: Guid(cbaa6ea08f2408d42a32b3bf2f6e4e4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Torchfire_AO.psd using Guid(cbaa6ea08f2408d42a32b3bf2f6e4e4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3aa64e9766349cbbc4a265e8c7f89c76') in 0.100559 seconds 
+  Import took 0.119974 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000763 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Column_N.png
+  artifactKey: Guid(c936c9464f1ffbd4180d4aab8a89594a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Column_N.png using Guid(c936c9464f1ffbd4180d4aab8a89594a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4e0c9420da74dd18db557764e575c9c') in 0.335447 seconds 
+  Import took 0.360090 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000713 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Ornament_AO.psd
+  artifactKey: Guid(e7abf7af7f445824aad6ed712a6e2aad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Ornament_AO.psd using Guid(e7abf7af7f445824aad6ed712a6e2aad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1603637f478ca941dcab8b13511e392') in 0.144416 seconds 
+  Import took 0.174197 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000711 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Hand_torchfire_Normal.png
+  artifactKey: Guid(40da87b811ebc2f48b3b9fc4844fd9e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Hand_torchfire_Normal.png using Guid(40da87b811ebc2f48b3b9fc4844fd9e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c50ce4fd4f6a0319c6b574ae2548e43') in 0.106239 seconds 
+  Import took 0.133099 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001122 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Anubis_statue_Normal.png
+  artifactKey: Guid(883ca6cd53107dd4d9789b06cb7bf3b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Anubis_statue_Normal.png using Guid(883ca6cd53107dd4d9789b06cb7bf3b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5aeae91821a1da2fa2107da6a384e33f') in 0.240064 seconds 
+  Import took 0.266212 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000779 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Pyramid_enter_normal.psd
+  artifactKey: Guid(73c90687bc943c04e8aee332ed89e4a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Pyramid_enter_normal.psd using Guid(73c90687bc943c04e8aee332ed89e4a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '447c0e371247ad39725f4d9115cd6d74') in 0.846866 seconds 
+  Import took 0.904900 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000852 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Brick_wall_N.tga
+  artifactKey: Guid(4b0d003f0d274b0449a0fe66e3642f10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Brick_wall_N.tga using Guid(4b0d003f0d274b0449a0fe66e3642f10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c080b2df66f63a7604aad0e17044548') in 0.220078 seconds 
+  Import took 0.279033 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001079 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Column_5m_N.png
+  artifactKey: Guid(aed73fcb24c96604a8e84ab747ba58f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Column_5m_N.png using Guid(aed73fcb24c96604a8e84ab747ba58f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ada1663289ddd53db1ec4102fd2928a') in 0.255142 seconds 
+  Import took 0.275556 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000852 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Stone_door_N.psd
+  artifactKey: Guid(02b4515bae687b44fadeb1018b5b8b3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Stone_door_N.psd using Guid(02b4515bae687b44fadeb1018b5b8b3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7077baa6ffd7af0614d58f92b0cff596') in 0.214149 seconds 
+  Import took 0.272950 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000921 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Column_5m_AO.psd
+  artifactKey: Guid(fbd1517b5d6769c4d8106bf515cce4ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Column_5m_AO.psd using Guid(fbd1517b5d6769c4d8106bf515cce4ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16181b0e452c6cb085af0edb087b0c6e') in 0.122618 seconds 
+  Import took 0.180008 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001454 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Pyramid_m.psd
+  artifactKey: Guid(f04b2785b8bd50b4b83c6f1755957d27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Pyramid_m.psd using Guid(f04b2785b8bd50b4b83c6f1755957d27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4b815d5b44d992bded78fe74f78b638') in 0.257850 seconds 
+  Import took 0.318049 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001063 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Ceiling_M.tga
+  artifactKey: Guid(45899357d55ccc144b54b729d01e7f19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Ceiling_M.tga using Guid(45899357d55ccc144b54b729d01e7f19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c963efb1e98ae0e4fab960015640170b') in 0.111385 seconds 
+  Import took 0.171380 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000956 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Arrow_shooter_N.png
+  artifactKey: Guid(2e90ae648b209574585b8ebafeabf9f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Arrow_shooter_N.png using Guid(2e90ae648b209574585b8ebafeabf9f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe02a31ed01998db5eaa02c0b8c2740e') in 0.112403 seconds 
+  Import took 0.172786 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001044 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/FireSpark.tga
+  artifactKey: Guid(ef1344b299efff842bf48ec1a3044593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/FireSpark.tga using Guid(ef1344b299efff842bf48ec1a3044593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '740ec8bc406db875fef35c8a38cf0f46') in 0.053466 seconds 
+  Import took 0.075539 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000845 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Column_small_n.png
+  artifactKey: Guid(de365442f1dff6e4089ceb80655710ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Column_small_n.png using Guid(de365442f1dff6e4089ceb80655710ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1b1cc63585f741601584e8b9a31b59c') in 0.268585 seconds 
+  Import took 0.293102 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000987 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Rock_1_N.psd
+  artifactKey: Guid(f3cbd9e0e96de584ca4e14c496376e61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Rock_1_N.psd using Guid(f3cbd9e0e96de584ca4e14c496376e61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8324ff1bff9e9e89623c180429fc3912') in 0.291110 seconds 
+  Import took 0.355575 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000915 seconds.
+  path: Assets/Ancient Modular Tombs/Textures
+  artifactKey: Guid(dc2a4473926f21043b41e59562a798fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures using Guid(dc2a4473926f21043b41e59562a798fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b618e5856b1338bc94d60cdd22d41a17') in 0.019850 seconds 
+  Import took 0.044028 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000861 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Vase_1_v1_a.png
+  artifactKey: Guid(1c104d2dbb16d7043a6c69c869d3d695) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Vase_1_v1_a.png using Guid(1c104d2dbb16d7043a6c69c869d3d695) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e8d3ba12a8372f794d6aea054cdf2ff') in 0.112077 seconds 
+  Import took 0.138108 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000755 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Metal spikes_A.png
+  artifactKey: Guid(9d1257e49bca391459c2be5443c34feb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Metal spikes_A.png using Guid(9d1257e49bca391459c2be5443c34feb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce135ddf33860cbeb4c7bb16e0b3f2ca') in 0.216747 seconds 
+  Import took 0.295652 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001146 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Rock_3_N.png
+  artifactKey: Guid(af53c592240f43a4c92488975bbf9459) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Rock_3_N.png using Guid(af53c592240f43a4c92488975bbf9459) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff8d2828aea2d40ce6b2f9cdab4aa699') in 0.257814 seconds 
+  Import took 0.325100 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001007 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Ceiling_A.tga
+  artifactKey: Guid(18d7cb0ed1595804cb171cc5c6a7d7c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Ceiling_A.tga using Guid(18d7cb0ed1595804cb171cc5c6a7d7c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bac54d00962c6fae2413b8e3d94b17cc') in 0.101955 seconds 
+  Import took 0.125331 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000804 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Column_interior_n.tga
+  artifactKey: Guid(d3e9ff1571db13249a7260a59d97167c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Column_interior_n.tga using Guid(d3e9ff1571db13249a7260a59d97167c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aee1474dad2073b2ac83c5646526ef91') in 0.242908 seconds 
+  Import took 0.303251 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000679 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Ornament_n_v2.psd
+  artifactKey: Guid(352b289c881211c45a097d91a7760c24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Ornament_n_v2.psd using Guid(352b289c881211c45a097d91a7760c24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0347fea5516bdf936296d52df0909957') in 0.094336 seconds 
+  Import took 0.114304 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000848 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Floor_with_spikes_trap_N.png
+  artifactKey: Guid(21b6d175f8b124d43aac811f3e074186) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Floor_with_spikes_trap_N.png using Guid(21b6d175f8b124d43aac811f3e074186) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43cf6984f093b925be7028f53ae8e4b5') in 0.103546 seconds 
+  Import took 0.126678 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000877 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Torchfire_Metall_A.png
+  artifactKey: Guid(45e8f7b385965644aa4d5966b732fa63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Torchfire_Metall_A.png using Guid(45e8f7b385965644aa4d5966b732fa63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0abdee6dce199fcf37a159cceaeac01e') in 0.220231 seconds 
+  Import took 0.240945 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000972 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Door_arch.png
+  artifactKey: Guid(06452f64837fec24db39db6bf862bf00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Door_arch.png using Guid(06452f64837fec24db39db6bf862bf00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe63c2c27650cd2f6b751ac322c46d86') in 0.643997 seconds 
+  Import took 0.701245 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000846 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Wall_paintings.psd
+  artifactKey: Guid(39b17ffb949cbcf4b99cbb2eaf5f71e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Wall_paintings.psd using Guid(39b17ffb949cbcf4b99cbb2eaf5f71e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c5340b5452eed1a5f0ea9be22452907') in 0.111394 seconds 
+  Import took 0.132720 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000932 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Floor_a.psd
+  artifactKey: Guid(e62c0fa96403b7a47ae33ffd04d6772c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Floor_a.psd using Guid(e62c0fa96403b7a47ae33ffd04d6772c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4725521ab30485824dd8a28a6b6f0df') in 0.109557 seconds 
+  Import took 0.171444 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001291 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Pyramid_enter_ao.psd
+  artifactKey: Guid(46baae4d431f23247a85b9c9c1c51cb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Pyramid_enter_ao.psd using Guid(46baae4d431f23247a85b9c9c1c51cb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4af30e8259cd5322d25aacdc794c23a') in 0.120821 seconds 
+  Import took 0.146853 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000917 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Pyramid_a.psd
+  artifactKey: Guid(bb8cae6cf96c82e439b4aafb2963f2a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Pyramid_a.psd using Guid(bb8cae6cf96c82e439b4aafb2963f2a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd904f7db941cd0ebadec0d9b0f7d2b8') in 0.149321 seconds 
+  Import took 0.216639 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000931 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Vase_1_v1_n.png
+  artifactKey: Guid(821157ddd485a6f4faf04000a61430ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Vase_1_v1_n.png using Guid(821157ddd485a6f4faf04000a61430ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e4026711f71a1c67669e71a2b7dd8da') in 0.160536 seconds 
+  Import took 0.216626 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000993 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Horus_AO.png
+  artifactKey: Guid(a5fe5f89b692c8f45bf25c4956d644c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Horus_AO.png using Guid(a5fe5f89b692c8f45bf25c4956d644c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e67d45fa5b6bcfddc26e5071052b0586') in 0.071839 seconds 
+  Import took 0.098764 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001609 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Torchfire_N.psd
+  artifactKey: Guid(3afa47c794f030740b57ba03f787616a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Torchfire_N.psd using Guid(3afa47c794f030740b57ba03f787616a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '170760548a8dfb45a59651c0dfb9779d') in 0.256259 seconds 
+  Import took 0.323250 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000882 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Fire_red.tga
+  artifactKey: Guid(29f97aed15aa16745b63642930a48dc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Fire_red.tga using Guid(29f97aed15aa16745b63642930a48dc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '101dcd27929ee8812581a6265cea3612') in 0.154851 seconds 
+  Import took 0.215773 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000981 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Ornaments_A.psd
+  artifactKey: Guid(16677bb13dcedda47983b0d7e69d76a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Ornaments_A.psd using Guid(16677bb13dcedda47983b0d7e69d76a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0d2133933a62d697b091c2f7ab3af95') in 0.119280 seconds 
+  Import took 0.145034 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000744 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Pyramid_N.psd
+  artifactKey: Guid(c2110c3c04b5f9f4fb35c4946255e607) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Pyramid_N.psd using Guid(c2110c3c04b5f9f4fb35c4946255e607) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62b36823caa2d1ecf48cb42deb6347b2') in 0.255869 seconds 
+  Import took 0.335421 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000773 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Stone_gate_N.png
+  artifactKey: Guid(3be5fa35573c5a94f8bf5fb8c10ca8d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Stone_gate_N.png using Guid(3be5fa35573c5a94f8bf5fb8c10ca8d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe18939aa51f473c562fec28bbb8a22d') in 0.216235 seconds 
+  Import took 0.236884 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000650 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Arrow_m.tga
+  artifactKey: Guid(8995507228c1e9e489c275aa37f8e0c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Arrow_m.tga using Guid(8995507228c1e9e489c275aa37f8e0c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5afa6a42c691422d8657064eedaff100') in 0.136329 seconds 
+  Import took 0.154217 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000767 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Horus_Metallic.png
+  artifactKey: Guid(6cf871df833055046bf82485b0f71ee1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Horus_Metallic.png using Guid(6cf871df833055046bf82485b0f71ee1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e505867a58d28bfc6816d7911898f7b') in 0.312463 seconds 
+  Import took 0.332661 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000732 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Torchfire_Metall_M.png
+  artifactKey: Guid(754253ef608f92e4fa22ab0668a5a8e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Torchfire_Metall_M.png using Guid(754253ef608f92e4fa22ab0668a5a8e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd463aa0b9c2070118e1fde6360c1b8e') in 0.256926 seconds 
+  Import took 0.276831 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000955 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Brick_wall_AO.tga
+  artifactKey: Guid(0c16b110dcbb88f48ab6c4b982db2ba8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Brick_wall_AO.tga using Guid(0c16b110dcbb88f48ab6c4b982db2ba8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17a1aba9c32c6d7f4a8a53ca36d5af99') in 0.113856 seconds 
+  Import took 0.137974 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001327 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Torchfire_Metall_AO.png
+  artifactKey: Guid(09c23f695711d9b498c86c57b61bd59e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Torchfire_Metall_AO.png using Guid(09c23f695711d9b498c86c57b61bd59e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9856673632fd71ed7253885de2b414e1') in 0.070621 seconds 
+  Import took 0.092430 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000820 seconds.
+  path: Assets/Ancient Modular Tombs/Textures/Stone_gate_AO.png
+  artifactKey: Guid(199c9a7f48492604d9dc2cbc3f8765de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Textures/Stone_gate_AO.png using Guid(199c9a7f48492604d9dc2cbc3f8765de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '763c6c192b36b6759008ebc7b15712b7') in 0.154086 seconds 
+  Import took 0.213373 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2876.282441 seconds.
+  path: Assets/Ancient Modular Tombs/Materials/Vase_1.mat
+  artifactKey: Guid(6dab898b1b6bd6a4f9a6beb220e50fcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Materials/Vase_1.mat using Guid(6dab898b1b6bd6a4f9a6beb220e50fcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd58090eacb2b64b138a0359b10ab842e') in 4.848681 seconds 
+  Import took 5.216037 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000985 seconds.
+  path: Assets/Ancient Modular Tombs/Materials/Vase_1_v2.mat
+  artifactKey: Guid(3d92bdbbf43689b45ae521310cfcfd4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Materials/Vase_1_v2.mat using Guid(3d92bdbbf43689b45ae521310cfcfd4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9d8b7b694a2f5251b2f590279c6aab1') in 0.271018 seconds 
+  Import took 0.293488 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 248073.879521 seconds.
+  path: Assets/ExampleAssets/Materials/DryWallPainted_Mat.mat
+  artifactKey: Guid(9b8eadc4de0544646b75ddcc43f8fd06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Materials/DryWallPainted_Mat.mat using Guid(9b8eadc4de0544646b75ddcc43f8fd06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a915d57feaf76f5087689dc28b60ae15') in 1.396699 seconds 
+  Import took 1.446289 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000295 seconds.
+  path: Assets/ExampleAssets/Textures/Drywall/DrywallPainted_Normal.tif
+  artifactKey: Guid(2cd242c9999e92b4ca96dab876cfaf13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Textures/Drywall/DrywallPainted_Normal.tif using Guid(2cd242c9999e92b4ca96dab876cfaf13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '412a7a0d496f6f8fc2a3dc499ec697c7') in 0.036103 seconds 
+  Import took 0.043842 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000246 seconds.
+  path: Assets/Ancient Modular Tombs/Interior modular meshes/Materials/Wall_painted_1.mat
+  artifactKey: Guid(0f102b17cf25c0443ba205d61db4bd09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Interior modular meshes/Materials/Wall_painted_1.mat using Guid(0f102b17cf25c0443ba205d61db4bd09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd73b5d9a69454a5f21b039cb22a7a8d5') in 1.426857 seconds 
+  Import took 1.433686 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000361 seconds.
+  path: Assets/Ancient Modular Tombs/Interior modular meshes/Materials/Wall_painted_2.mat
+  artifactKey: Guid(5b2e2a9f2baff7d4c9d8b16a93b26b77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Interior modular meshes/Materials/Wall_painted_2.mat using Guid(5b2e2a9f2baff7d4c9d8b16a93b26b77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7d26a9732625179b0b1899d6a47980a') in 0.055038 seconds 
+  Import took 0.063254 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000467 seconds.
+  path: Assets/Ancient Modular Tombs/Interior modular meshes/Materials/Wall_interior.mat
+  artifactKey: Guid(16a53dde71d5096449d05de574cfa580) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Interior modular meshes/Materials/Wall_interior.mat using Guid(16a53dde71d5096449d05de574cfa580) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '137e4f841ea16876a0532ab11b753870') in 0.153534 seconds 
+  Import took 0.159461 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000310 seconds.
+  path: Assets/Ancient Modular Tombs/Interior modular meshes/Materials/Wall_corridor.mat
+  artifactKey: Guid(6b7983e3019f5314d8b12fc9ace9dbd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Interior modular meshes/Materials/Wall_corridor.mat using Guid(6b7983e3019f5314d8b12fc9ace9dbd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b887fbe0d4a0a229fcf17fee9a2a3adc') in 0.252101 seconds 
+  Import took 0.260789 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000432 seconds.
+  path: Assets/Ancient Modular Tombs/Interior modular meshes/Materials/Wall_interior_2.mat
+  artifactKey: Guid(56efbb534ec6db64782809281c752db7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Interior modular meshes/Materials/Wall_interior_2.mat using Guid(56efbb534ec6db64782809281c752db7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9123070d4709ea5f27dd2883a1964bb6') in 0.127025 seconds 
+  Import took 0.134071 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000348 seconds.
+  path: Assets/Ancient Modular Tombs/Interior modular meshes/Materials/Wall_painted_3.mat
+  artifactKey: Guid(0ddc0f33c5d0d8a408360a4fc5e3cecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Interior modular meshes/Materials/Wall_painted_3.mat using Guid(0ddc0f33c5d0d8a408360a4fc5e3cecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '245ca651bb3b6f4e21772b20489136cf') in 0.051719 seconds 
+  Import took 0.058288 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21898.377698 seconds.
+  path: Assets/ExampleAssets/Textures/Props/Construction_Light/ConstructionLight_Albedo.tif
+  artifactKey: Guid(2ec6e1532acb1254f9f3797b5d82db44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Textures/Props/Construction_Light/ConstructionLight_Albedo.tif using Guid(2ec6e1532acb1254f9f3797b5d82db44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd1a25defc9d218ca22975c6383c278f') in 0.168210 seconds 
+  Import took 0.309650 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000987 seconds.
+  path: Assets/ExampleAssets/Textures/Props/Hammer/Hammer_MetallicOcculusionSmoothness.tif
+  artifactKey: Guid(6c509e4ae024b5e4faeefb92dab5c812) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Textures/Props/Hammer/Hammer_MetallicOcculusionSmoothness.tif using Guid(6c509e4ae024b5e4faeefb92dab5c812) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f637bc18d7bf79dc1aabd32af09681da') in 0.077874 seconds 
+  Import took 0.096859 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000474 seconds.
+  path: Assets/ExampleAssets/Textures/Props/Hammer/Hammer_Albedo.tif
+  artifactKey: Guid(59c8de363dc14c54986d0751c2c38342) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Textures/Props/Hammer/Hammer_Albedo.tif using Guid(59c8de363dc14c54986d0751c2c38342) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b7f0f3e195c34f99c705abc05f3a63d') in 0.056475 seconds 
+  Import took 0.075240 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000559 seconds.
+  path: Assets/ExampleAssets/Textures/Props/Jigsaw/Jigsaw_Albedo.tif
+  artifactKey: Guid(b3f247b26e080ca468f1daa963c192ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Textures/Props/Jigsaw/Jigsaw_Albedo.tif using Guid(b3f247b26e080ca468f1daa963c192ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb54be82ee6e46e4e941776439d2e365') in 0.058974 seconds 
+  Import took 0.076879 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000475 seconds.
+  path: Assets/TutorialInfo/Icons/Help_Icon.png
+  artifactKey: Guid(34f556d724b1bbf4097ca6220db2c581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TutorialInfo/Icons/Help_Icon.png using Guid(34f556d724b1bbf4097ca6220db2c581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd451056ff440aa0d31076fd92f4cb4be') in 0.051215 seconds 
+  Import took 0.071321 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000516 seconds.
+  path: Assets/Ancient Modular Tombs/Terrain textures/Desert Sand_normalmap.tiff
+  artifactKey: Guid(be737d1b2203b36498a7da9da6199223) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Terrain textures/Desert Sand_normalmap.tiff using Guid(be737d1b2203b36498a7da9da6199223) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1df36053fdff9cc58fbd20e40d33ce73') in 0.072114 seconds 
+  Import took 0.093669 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000492 seconds.
+  path: Assets/Normal/Examples/Blank Scene Template/Floor/Floor.png
+  artifactKey: Guid(643e85fabbe0ca24b8a810a61b9ac148) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Normal/Examples/Blank Scene Template/Floor/Floor.png using Guid(643e85fabbe0ca24b8a810a61b9ac148) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d87310aedcb34587280ee1b88b2c926') in 0.052374 seconds 
+  Import took 0.074533 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000519 seconds.
+  path: Assets/Ancient Modular Tombs/Pyramid/Lightmap-0_comp_dir.png
+  artifactKey: Guid(719b68633a9b8324689f17624204afc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Pyramid/Lightmap-0_comp_dir.png using Guid(719b68633a9b8324689f17624204afc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04c8eb7d7f7a13521fbfc78d051f351d') in 0.226841 seconds 
+  Import took 0.247236 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000739 seconds.
+  path: Assets/ExampleAssets/Textures/Plastic/Elastic_MetallicOcculusionSmoothness.tif
+  artifactKey: Guid(f5df2fb0c070b57429f8ca23b216093b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Textures/Plastic/Elastic_MetallicOcculusionSmoothness.tif using Guid(f5df2fb0c070b57429f8ca23b216093b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b216d1119e2a1feea3333f1487d4c335') in 0.058808 seconds 
+  Import took 0.077629 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000610 seconds.
+  path: Assets/Ancient Modular Tombs/Terrain textures/Desert Sand_albedo.tif
+  artifactKey: Guid(701225096769e7f4ea88d09c28af79ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Terrain textures/Desert Sand_albedo.tif using Guid(701225096769e7f4ea88d09c28af79ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bdf2734a4955690ceb3c75cec023d2b') in 0.059189 seconds 
+  Import took 0.079168 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000605 seconds.
+  path: Assets/ExampleAssets/Textures/Concrete/Ground_MetallicOcculusionSmoothness.tif
+  artifactKey: Guid(a8d38587573a5f34c91c4ae0fbd8bfef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Textures/Concrete/Ground_MetallicOcculusionSmoothness.tif using Guid(a8d38587573a5f34c91c4ae0fbd8bfef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50510cf6ca810b6eafbe2199741a413f') in 0.063783 seconds 
+  Import took 0.084971 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000630 seconds.
+  path: Assets/ExampleAssets/Textures/Drywall/Drywall_AlbedoSmoothness.tif
+  artifactKey: Guid(3e11968c372730442aae3b4f7c909931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Textures/Drywall/Drywall_AlbedoSmoothness.tif using Guid(3e11968c372730442aae3b4f7c909931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '468b1d893781637485bde113cec02336') in 0.069266 seconds 
+  Import took 0.093974 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000528 seconds.
+  path: Assets/ExampleAssets/Textures/Props/Jigsaw/Jigsaw_Normal.tif
+  artifactKey: Guid(06969fc081d8cc146af6634f75abe652) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Textures/Props/Jigsaw/Jigsaw_Normal.tif using Guid(06969fc081d8cc146af6634f75abe652) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e18d661c5888faf44aadae858495a9e') in 0.064229 seconds 
+  Import took 0.083053 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000548 seconds.
+  path: Assets/ExampleAssets/Textures/Concrete/Ground_Normal.tif
+  artifactKey: Guid(fab85e0cacda9644a99e5182a86b71f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Textures/Concrete/Ground_Normal.tif using Guid(fab85e0cacda9644a99e5182a86b71f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6b471aa1a14afd38883fce2d2f626cd') in 0.066925 seconds 
+  Import took 0.086065 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000493 seconds.
+  path: Assets/ExampleAssets/Textures/Props/Jigsaw/Jigsaw_MetallicOcculusionSmoothness.tif
+  artifactKey: Guid(3017ed6fed9d3bb49ba99bf738e2d626) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Textures/Props/Jigsaw/Jigsaw_MetallicOcculusionSmoothness.tif using Guid(3017ed6fed9d3bb49ba99bf738e2d626) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7af3c8ce55112b9c6de8fbbe949b726') in 0.071360 seconds 
+  Import took 0.095676 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000564 seconds.
+  path: Assets/Normal/Examples/Hoverbird Player/Hoverbird Character/Textures/Hoverbird Grid.png
+  artifactKey: Guid(41edf6c7fe86848c0b1e7764a713b41c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Normal/Examples/Hoverbird Player/Hoverbird Character/Textures/Hoverbird Grid.png using Guid(41edf6c7fe86848c0b1e7764a713b41c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c75c7ca401320460113313ef841c5d15') in 0.080672 seconds 
+  Import took 0.128895 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000648 seconds.
+  path: Assets/ExampleAssets/Textures/Props/Construction_Light/ConstructionLight_MetallicOcculusionSmoothness.tif
+  artifactKey: Guid(9a81f1a59f171804e84fce76584bdcb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Textures/Props/Construction_Light/ConstructionLight_MetallicOcculusionSmoothness.tif using Guid(9a81f1a59f171804e84fce76584bdcb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a64368a676aa2dc9039da1db8d4a6080') in 0.081285 seconds 
+  Import took 0.122414 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000508 seconds.
+  path: Assets/ExampleAssets/Textures/Drywall/Drywall_Normal.tif
+  artifactKey: Guid(e231e4c02c48ee14aafa55f7b1a843c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Textures/Drywall/Drywall_Normal.tif using Guid(e231e4c02c48ee14aafa55f7b1a843c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '912192569305d2a976e439af2ba57f05') in 0.062395 seconds 
+  Import took 0.084687 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000557 seconds.
+  path: Assets/ExampleAssets/Textures/Concrete/Ground_Albedo.tif
+  artifactKey: Guid(87ce03bd447ccce48bbff87ac0d8355f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Textures/Concrete/Ground_Albedo.tif using Guid(87ce03bd447ccce48bbff87ac0d8355f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bae4512fd0e57326c86d1812b5e1d46e') in 0.049095 seconds 
+  Import took 0.071770 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000486 seconds.
+  path: Assets/ExampleAssets/Textures/Plastic/Elastic_Normal.tif
+  artifactKey: Guid(db17334dfe5991a4bbe241ee9a728c38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Textures/Plastic/Elastic_Normal.tif using Guid(db17334dfe5991a4bbe241ee9a728c38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '829144afeca5d24da0c102890c205d09') in 0.048652 seconds 
+  Import took 0.071068 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000565 seconds.
+  path: Assets/ExampleAssets/Textures/Drywall/Drywall_Albedo.tif
+  artifactKey: Guid(eae496078d11426448124eaf8b285e6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Textures/Drywall/Drywall_Albedo.tif using Guid(eae496078d11426448124eaf8b285e6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b2d8a9eb2eefe40f1d03c00a72a7f5e') in 0.046445 seconds 
+  Import took 0.065424 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000505 seconds.
+  path: Assets/ExampleAssets/Textures/Props/Hammer/Hammer_Normal.tif
+  artifactKey: Guid(c517a9b1527aec343806327b47ad22df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Textures/Props/Hammer/Hammer_Normal.tif using Guid(c517a9b1527aec343806327b47ad22df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a757b5d4641acf2d29b147d451797f82') in 0.058285 seconds 
+  Import took 0.075378 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000611 seconds.
+  path: Assets/Normal/Examples/Hoverbird Player/Hoverbird Character/Textures/Hoverbird Gradient.png
+  artifactKey: Guid(299b4d5105b344545a30eb8105cc830b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Normal/Examples/Hoverbird Player/Hoverbird Character/Textures/Hoverbird Gradient.png using Guid(299b4d5105b344545a30eb8105cc830b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf2605b25692630f8aa0b80eaf90546c') in 0.042605 seconds 
+  Import took 0.059618 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.274800 seconds.
+  path: Assets/Ancient Modular Tombs/Pyramid/Lightmap-0_comp_light.exr
+  artifactKey: Guid(109eb827570bf1c469cb2040b4d5762f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Pyramid/Lightmap-0_comp_light.exr using Guid(109eb827570bf1c469cb2040b4d5762f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07db8ad775690b74142aabb2807db2a1') in 1.232486 seconds 
+  Import took 1.256015 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000722 seconds.
+  path: Assets/ExampleAssets/Textures/Props/Paint/PaintAnimMask.tif
+  artifactKey: Guid(5e98de278b2ccc14f89b76b85596a3f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Textures/Props/Paint/PaintAnimMask.tif using Guid(5e98de278b2ccc14f89b76b85596a3f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a7dd486e4c9fea5220e2f447e31ac34') in 0.052690 seconds 
+  Import took 0.075022 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000492 seconds.
+  path: Assets/Ancient Modular Tombs/Pyramid/Lightmap-4_comp_dir.png
+  artifactKey: Guid(4f1f7177a1c27b64f813ceb99c228f9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Pyramid/Lightmap-4_comp_dir.png using Guid(4f1f7177a1c27b64f813ceb99c228f9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99e266cb69a064730bdb085695e0a602') in 0.101910 seconds 
+  Import took 0.121094 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000529 seconds.
+  path: Assets/ExampleAssets/Textures/Wood/OBS_MetallicOcculusionSmoothness.tif
+  artifactKey: Guid(22638a9216f1ebf4cb43273a00879f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Textures/Wood/OBS_MetallicOcculusionSmoothness.tif using Guid(22638a9216f1ebf4cb43273a00879f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f64778fd3ed786c856e3054f893bf33') in 0.040247 seconds 
+  Import took 0.058480 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000491 seconds.
+  path: Assets/ExampleAssets/Textures/Metal/Metal_Normal.tif
+  artifactKey: Guid(3b0b7c1f4ac9f6b499e27cf84e722ff4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Textures/Metal/Metal_Normal.tif using Guid(3b0b7c1f4ac9f6b499e27cf84e722ff4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d47a327ce7e77c29ed35cae2ebd7f4d') in 0.046474 seconds 
+  Import took 0.064787 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000599 seconds.
+  path: Assets/Ancient Modular Tombs/Pyramid/Lightmap-5_comp_light.exr
+  artifactKey: Guid(fdc50cb87cf13ca4dab8323d88be6a02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Pyramid/Lightmap-5_comp_light.exr using Guid(fdc50cb87cf13ca4dab8323d88be6a02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab51ac21666e2bfcb03860bfe33e0520') in 0.079751 seconds 
+  Import took 0.099919 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000512 seconds.
+  path: Assets/Ancient Modular Tombs/Pyramid/Lightmap-6_comp_light.exr
+  artifactKey: Guid(3098f723be0e5aa43a783e86ce798d6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Pyramid/Lightmap-6_comp_light.exr using Guid(3098f723be0e5aa43a783e86ce798d6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1abb9ac2e5f15f8a3db573b2267b6539') in 0.085560 seconds 
+  Import took 0.105448 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000897 seconds.
+  path: Assets/ExampleAssets/Textures/Plastic/PlasticRough_MetallicOcculusionSmoothness.tif
+  artifactKey: Guid(ee7680f1374ab4449b6d5f6b2c2c1936) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Textures/Plastic/PlasticRough_MetallicOcculusionSmoothness.tif using Guid(ee7680f1374ab4449b6d5f6b2c2c1936) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7210947c178ebdde148c2a888c93d189') in 0.052973 seconds 
+  Import took 0.073206 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000723 seconds.
+  path: Assets/Ancient Modular Tombs/Pyramid/Lightmap-3_comp_light.exr
+  artifactKey: Guid(3ac412d606a4b0c42bd039818b4ad75e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Pyramid/Lightmap-3_comp_light.exr using Guid(3ac412d606a4b0c42bd039818b4ad75e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eae1a3e22200a3f9b37502b02ba52417') in 0.067536 seconds 
+  Import took 0.088074 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000679 seconds.
+  path: Assets/Ancient Modular Tombs/Pyramid/Lightmap-4_comp_light.exr
+  artifactKey: Guid(24d1b896348d7bd419b29285ebc41e94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Pyramid/Lightmap-4_comp_light.exr using Guid(24d1b896348d7bd419b29285ebc41e94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5187c6561588aca8bb8fcadc6c03b8d') in 0.090643 seconds 
+  Import took 0.110521 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000601 seconds.
+  path: Assets/Ancient Modular Tombs/Pyramid/Lightmap-2_comp_dir.png
+  artifactKey: Guid(179adb50c91061c48b44e4165504f565) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Pyramid/Lightmap-2_comp_dir.png using Guid(179adb50c91061c48b44e4165504f565) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '067c07c475fb112ab90da249346618e4') in 0.094898 seconds 
+  Import took 0.114074 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000465 seconds.
+  path: Assets/ExampleAssets/Textures/Wood/Plywood_Albedo.tif
+  artifactKey: Guid(9644eb6aca67672449e2bcbb0eab8e84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Textures/Wood/Plywood_Albedo.tif using Guid(9644eb6aca67672449e2bcbb0eab8e84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e445b09616a684817fd0a1582b9d6bb') in 0.062428 seconds 
+  Import took 0.080938 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000556 seconds.
+  path: Assets/ExampleAssets/Textures/Plastic/PlasticRidges_Normal.tif
+  artifactKey: Guid(c021d051fa0cba84282b4a2577aa85c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Textures/Plastic/PlasticRidges_Normal.tif using Guid(c021d051fa0cba84282b4a2577aa85c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '868b20905474f68fa0d6ef3b82e41e05') in 0.047457 seconds 
+  Import took 0.066239 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000456 seconds.
+  path: Assets/ExampleAssets/Textures/Wood/OBS_Normal.tif
+  artifactKey: Guid(fcce267dfc966b6408dc2ebe0cfb60ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Textures/Wood/OBS_Normal.tif using Guid(fcce267dfc966b6408dc2ebe0cfb60ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6d14621fb4164ece7286716ce4aca60') in 0.050978 seconds 
+  Import took 0.069486 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000623 seconds.
+  path: Assets/ExampleAssets/Textures/Props/Paint/Paintbrush_Normal.tif
+  artifactKey: Guid(09e745bf0b8ff6a4bb5785d14168289a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Textures/Props/Paint/Paintbrush_Normal.tif using Guid(09e745bf0b8ff6a4bb5785d14168289a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64ac724696b8da7ba53ff222cd518304') in 0.053143 seconds 
+  Import took 0.070115 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000491 seconds.
+  path: Assets/ExampleAssets/Textures/Metal/Metal_Albedo.tif
+  artifactKey: Guid(77583f99dea53b641804bb357092ec83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Textures/Metal/Metal_Albedo.tif using Guid(77583f99dea53b641804bb357092ec83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e159fd84ad6f0a330ff69bcfc98fd4d3') in 0.045858 seconds 
+  Import took 0.064131 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000943 seconds.
+  path: Assets/ExampleAssets/Textures/Props/Paint/PaintLabel.tif
+  artifactKey: Guid(e5c37ab0c7b37af4f981195d3caaf4b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Textures/Props/Paint/PaintLabel.tif using Guid(e5c37ab0c7b37af4f981195d3caaf4b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9aec18a3124bc52f11f9adfb0c6390d4') in 0.037309 seconds 
+  Import took 0.052858 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000870 seconds.
+  path: Assets/ExampleAssets/Textures/Plastic/PlasticRough_Albedo.tif
+  artifactKey: Guid(7b82d12aad56cc445b99fd1cf06a232d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Textures/Plastic/PlasticRough_Albedo.tif using Guid(7b82d12aad56cc445b99fd1cf06a232d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f86afa933bcbd63099ebac1770ef733') in 0.051869 seconds 
+  Import took 0.070101 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000609 seconds.
+  path: Assets/ExampleAssets/Textures/Wood/OBS_Albedo.tif
+  artifactKey: Guid(7140a9bc83a12ea49a081dda89216fff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Textures/Wood/OBS_Albedo.tif using Guid(7140a9bc83a12ea49a081dda89216fff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa97fc78344df5b91d748dc85ed7744a') in 0.045728 seconds 
+  Import took 0.063535 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000342 seconds.
+  path: Assets/ExampleAssets/Textures/Plastic/Plastic_AlbedoSmoothness.tif
+  artifactKey: Guid(1f89fed00b6bc904c861ab847a811cb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Textures/Plastic/Plastic_AlbedoSmoothness.tif using Guid(1f89fed00b6bc904c861ab847a811cb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '845692355ce18a703837a7c3d3bf670d') in 0.044781 seconds 
+  Import took 0.063281 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000480 seconds.
+  path: Assets/ExampleAssets/Textures/Wood/Plywood_Normal.tif
+  artifactKey: Guid(2148396b133b56f40baa7ea4fd22982a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Textures/Wood/Plywood_Normal.tif using Guid(2148396b133b56f40baa7ea4fd22982a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd95ed1456340783763561b9e8ff15bbd') in 0.053955 seconds 
+  Import took 0.073218 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000592 seconds.
+  path: Assets/Ancient Modular Tombs/Pyramid/Lightmap-3_comp_dir.png
+  artifactKey: Guid(338e97f530f988544ac385d662ec8237) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Pyramid/Lightmap-3_comp_dir.png using Guid(338e97f530f988544ac385d662ec8237) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '906628885a4e427b9b68ab75f5c162ad') in 0.101222 seconds 
+  Import took 0.118348 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000693 seconds.
+  path: Assets/ExampleAssets/Textures/Metal/Metal_MetallicSmoothness.tif
+  artifactKey: Guid(40da0395b61db4448b98bab66d6b549c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Textures/Metal/Metal_MetallicSmoothness.tif using Guid(40da0395b61db4448b98bab66d6b549c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19a15eaeab04c3e23ffcb03daec492ab') in 0.044838 seconds 
+  Import took 0.059369 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000925 seconds.
+  path: Assets/ExampleAssets/Textures/Props/Paint/Paint5G_AlbedoSmoothness.tif
+  artifactKey: Guid(5d25a5cd577a4c54e94fdf9cc6f1a631) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Textures/Props/Paint/Paint5G_AlbedoSmoothness.tif using Guid(5d25a5cd577a4c54e94fdf9cc6f1a631) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bad17a5629a8ccf7c2c685c5211e9d47') in 0.097937 seconds 
+  Import took 0.117951 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000571 seconds.
+  path: Assets/Ancient Modular Tombs/Pyramid/Lightmap-1_comp_light.exr
+  artifactKey: Guid(cce9e083814fe2245956f7e5aa0cea29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Pyramid/Lightmap-1_comp_light.exr using Guid(cce9e083814fe2245956f7e5aa0cea29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34b86cf29fe641d1342c396394189d42') in 0.088773 seconds 
+  Import took 0.108092 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000599 seconds.
+  path: Assets/ExampleAssets/Textures/Props/Paint/Paint1G_Normal.tif
+  artifactKey: Guid(ac80c335ebd6dde4fa54a82050064545) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Textures/Props/Paint/Paint1G_Normal.tif using Guid(ac80c335ebd6dde4fa54a82050064545) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfe3fd1ffed67300556345e4ff2a0277') in 0.061534 seconds 
+  Import took 0.079528 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000461 seconds.
+  path: Assets/ExampleAssets/Textures/Props/Paint/Paintbrush_MetallicOcculusionSmoothness.tif
+  artifactKey: Guid(888916a5e87c05948b1a97b3c0d42556) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Textures/Props/Paint/Paintbrush_MetallicOcculusionSmoothness.tif using Guid(888916a5e87c05948b1a97b3c0d42556) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1dd1389bff2a5adc09e8596ab11e6d4') in 0.058631 seconds 
+  Import took 0.073685 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000708 seconds.
+  path: Assets/Ancient Modular Tombs/Tomb/ReflectionProbe-0.exr
+  artifactKey: Guid(fdf60bbcf2b8dff4b9194c82d90fadeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Tomb/ReflectionProbe-0.exr using Guid(fdf60bbcf2b8dff4b9194c82d90fadeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10464cce96f4ff62906eadf706c02b8d') in 1.205709 seconds 
+  Import took 1.234598 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002025 seconds.
+  path: Assets/Ancient Modular Tombs/Pyramid/Lightmap-1_comp_dir.png
+  artifactKey: Guid(b84e89ce73379a7448ef52a09c1b65d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Pyramid/Lightmap-1_comp_dir.png using Guid(b84e89ce73379a7448ef52a09c1b65d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6dbed916dde9564d0e9751e0404ccbd7') in 0.099249 seconds 
+  Import took 0.128536 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000667 seconds.
+  path: Assets/Ancient Modular Tombs/Pyramid/Lightmap-5_comp_dir.png
+  artifactKey: Guid(240cf12139d00614193f63994151ebbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Pyramid/Lightmap-5_comp_dir.png using Guid(240cf12139d00614193f63994151ebbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b9ef15a02b93238ec13f3f3cdd7efd4') in 0.105370 seconds 
+  Import took 0.129388 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000702 seconds.
+  path: Assets/ExampleAssets/Textures/Plastic/PlasticRidges_Albedo.tif
+  artifactKey: Guid(ecb23393a0d1b424a82fff68a4c00a66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Textures/Plastic/PlasticRidges_Albedo.tif using Guid(ecb23393a0d1b424a82fff68a4c00a66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a646a831325dad81f46db875dd95dafd') in 0.055002 seconds 
+  Import took 0.078340 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000496 seconds.
+  path: Assets/ExampleAssets/Textures/Plastic/PlasticRidges_MetallicOcculusionSmoothness.tif
+  artifactKey: Guid(201c1f77fe872924a86132486bc97e82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Textures/Plastic/PlasticRidges_MetallicOcculusionSmoothness.tif using Guid(201c1f77fe872924a86132486bc97e82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47d62402720cbfd7d7cffb58d625eb72') in 0.056831 seconds 
+  Import took 0.076195 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000810 seconds.
+  path: Assets/ExampleAssets/Textures/Props/Paint/Paint1G_MetallicOcculusionRoughness.tif
+  artifactKey: Guid(ca084ebab0cef7c4ba746cdb442f9c1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Textures/Props/Paint/Paint1G_MetallicOcculusionRoughness.tif using Guid(ca084ebab0cef7c4ba746cdb442f9c1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cec240696eefc3ad7ac02dba9ca0ad8') in 0.072049 seconds 
+  Import took 0.093869 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000609 seconds.
+  path: Assets/Ancient Modular Tombs/Pyramid/Lightmap-6_comp_dir.png
+  artifactKey: Guid(b7b0b909c7c354c48b8817d39d825e6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Pyramid/Lightmap-6_comp_dir.png using Guid(b7b0b909c7c354c48b8817d39d825e6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40c5ac9a58f3e28b48bf7fbf66cb69ab') in 0.169870 seconds 
+  Import took 0.191590 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000422 seconds.
+  path: Assets/ExampleAssets/Textures/Wood/Plywood_MetallicOcculusionSmoothness.tif
+  artifactKey: Guid(2e38f7921b7d7b1418ab63c08117ffb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Textures/Wood/Plywood_MetallicOcculusionSmoothness.tif using Guid(2e38f7921b7d7b1418ab63c08117ffb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dffea331bdbcfc0c4ff357b27d10b4a4') in 0.091281 seconds 
+  Import took 0.120159 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000875 seconds.
+  path: Assets/ExampleAssets/Textures/Props/Paint/Paint1G_Albedo.tif
+  artifactKey: Guid(2de0d72a6700bd94ea57111b29e246fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Textures/Props/Paint/Paint1G_Albedo.tif using Guid(2de0d72a6700bd94ea57111b29e246fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6080094ad6e4a8457f9fe520ffc4147f') in 0.062645 seconds 
+  Import took 0.082527 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000468 seconds.
+  path: Assets/ExampleAssets/Textures/Plastic/Plastic_Normal.tif
+  artifactKey: Guid(e109905c411b0f84e82eaaf2705ece30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Textures/Plastic/Plastic_Normal.tif using Guid(e109905c411b0f84e82eaaf2705ece30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50c0001aadcc046b22ac840911382076') in 0.050010 seconds 
+  Import took 0.071261 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000491 seconds.
+  path: Assets/Ancient Modular Tombs/Pyramid/Lightmap-2_comp_light.exr
+  artifactKey: Guid(da6a227618fbf1445bdc3d35868bb541) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Pyramid/Lightmap-2_comp_light.exr using Guid(da6a227618fbf1445bdc3d35868bb541) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73d69ddbc1cdcf9519936cff8cb219fc') in 0.096266 seconds 
+  Import took 0.119654 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000762 seconds.
+  path: Assets/ExampleAssets/Textures/Props/Paint/Paintbrush_Albedo.tif
+  artifactKey: Guid(4675081b0baf66345adc734388155502) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Textures/Props/Paint/Paintbrush_Albedo.tif using Guid(4675081b0baf66345adc734388155502) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e65a641cf60e26c0d22479291f311df') in 0.062840 seconds 
+  Import took 0.082503 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.495764 seconds.
+  path: Assets/Ancient Modular Tombs/Terrain textures/SandPebbles.tga
+  artifactKey: Guid(2eaaad4543dad234b91bec6e0e22e1cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Terrain textures/SandPebbles.tga using Guid(2eaaad4543dad234b91bec6e0e22e1cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fbfc5246e7fce90e7a72c0341114e5a') in 0.117941 seconds 
+  Import took 0.138170 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001049 seconds.
+  path: Assets/Ancient Modular Tombs/Terrain textures/SandPebbles_n.tga
+  artifactKey: Guid(ba51c4a5ddbbcfb4cb8a59fdb970b815) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Terrain textures/SandPebbles_n.tga using Guid(ba51c4a5ddbbcfb4cb8a59fdb970b815) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86c21197df5871ce04e98557ac852ef8') in 0.105294 seconds 
+  Import took 0.126400 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.528318 seconds.
+  path: Assets/Ancient Modular Tombs/Pyramid/ReflectionProbe-0.exr
+  artifactKey: Guid(1642e66a397f43e439f4f0dfa74b8d67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Pyramid/ReflectionProbe-0.exr using Guid(1642e66a397f43e439f4f0dfa74b8d67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27710a78d9dc65f8e284c25162eea1fe') in 0.093734 seconds 
+  Import took 0.114249 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000901 seconds.
+  path: Assets/Ancient Modular Tombs/Tomb/ReflectionProbe-1.exr
+  artifactKey: Guid(c68cf645bed2ab74fb7a3121d1fec58d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Tomb/ReflectionProbe-1.exr using Guid(c68cf645bed2ab74fb7a3121d1fec58d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5134e0c5f4784e6225dddc0d92d6140f') in 0.075142 seconds 
+  Import took 0.094107 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000609 seconds.
+  path: Assets/TutorialInfo/Icons/UniversalIcon.png
+  artifactKey: Guid(7801804018a7dcf42abb827444e18660) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TutorialInfo/Icons/UniversalIcon.png using Guid(7801804018a7dcf42abb827444e18660) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5737c84d2a4eb1addbe31c87608c1b6d') in 0.062694 seconds 
+  Import took 0.084502 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000698 seconds.
+  path: Assets/ExampleAssets/Textures/Props/HardHat/SafetyHat_Albedo.tif
+  artifactKey: Guid(dd61af2ec9847eb4d8e17529fa61b143) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Textures/Props/HardHat/SafetyHat_Albedo.tif using Guid(dd61af2ec9847eb4d8e17529fa61b143) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2a3fe3cbbab5afb3de5b72fd4d10c8a') in 0.067725 seconds 
+  Import took 0.090601 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000825 seconds.
+  path: Assets/ExampleAssets/Textures/Props/HardHat/SafetyHat_MetallicOcculusionSmoothness.tif
+  artifactKey: Guid(6f61f8dd4499250438f1aa39448e860a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Textures/Props/HardHat/SafetyHat_MetallicOcculusionSmoothness.tif using Guid(6f61f8dd4499250438f1aa39448e860a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81570e18fa4fa38d405a55fb3868d61e') in 0.067997 seconds 
+  Import took 0.088010 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000548 seconds.
+  path: Assets/ExampleAssets/Textures/Props/HardHat/SafetyHat_Normal.tif
+  artifactKey: Guid(d608c45da8580c9408ee50eb9a8c40f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Textures/Props/HardHat/SafetyHat_Normal.tif using Guid(d608c45da8580c9408ee50eb9a8c40f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71f0cfeaa1702b6ae29c707ebe49552d') in 0.059032 seconds 
+  Import took 0.079187 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 851.451793 seconds.
+  path: Assets/Ancient Modular Tombs/Materials/Anubis_statue.mat
+  artifactKey: Guid(f863523e21bfb50499af687b7ec203ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Materials/Anubis_statue.mat using Guid(f863523e21bfb50499af687b7ec203ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c428cc8321bed76c8c56351be55aa91') in 0.988397 seconds 
+  Import took 1.014517 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000842 seconds.
+  path: Assets/Ancient Modular Tombs/Materials/Fire_Red.mat
+  artifactKey: Guid(d9df5403c10ef75449d9b40ebf84cdb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Materials/Fire_Red.mat using Guid(d9df5403c10ef75449d9b40ebf84cdb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8aa4891f0285de3aa3f21c159608cdb') in 0.156801 seconds 
+  Import took 0.179142 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000793 seconds.
+  path: Assets/Ancient Modular Tombs/Materials/Horus_statue.mat
+  artifactKey: Guid(96c5ad94b8374974388e544c375903cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Materials/Horus_statue.mat using Guid(96c5ad94b8374974388e544c375903cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '082dc44739ca81921ea873fdee2ed888') in 0.720198 seconds 
+  Import took 0.740845 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000598 seconds.
+  path: Assets/Ancient Modular Tombs/Materials/Terrain.mat
+  artifactKey: Guid(00dc367425437c74ba021d0bbeba9642) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Materials/Terrain.mat using Guid(00dc367425437c74ba021d0bbeba9642) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f5696e2277cfb1d9711d30af1e1a991') in 2.396540 seconds 
+  Import took 2.413103 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000644 seconds.
+  path: Assets/Ancient Modular Tombs/Materials/SmokeBright.mat
+  artifactKey: Guid(bf941f24c443990409a667e25014303d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Materials/SmokeBright.mat using Guid(bf941f24c443990409a667e25014303d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '309073fe737586d1d4f4117af648d2b8') in 0.114958 seconds 
+  Import took 0.139247 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000484 seconds.
+  path: Assets/Ancient Modular Tombs/Materials/Column.mat
+  artifactKey: Guid(40c0b97af8b33aa49a8631b2a36d4871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Materials/Column.mat using Guid(40c0b97af8b33aa49a8631b2a36d4871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38b31bd9ed6bbf639aaefdf4e2d8c857') in 0.786005 seconds 
+  Import took 0.813677 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000654 seconds.
+  path: Assets/Ancient Modular Tombs/Materials/Pyramid enter.mat
+  artifactKey: Guid(ca3239e7303a14d4bb66d48a08984081) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Materials/Pyramid enter.mat using Guid(ca3239e7303a14d4bb66d48a08984081) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddd965e82380f048b04523755e56ff26') in 1.359818 seconds 
+  Import took 1.402585 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000915 seconds.
+  path: Assets/Ancient Modular Tombs/Materials/Demo_floor.mat
+  artifactKey: Guid(f6c9741a573c25544beab037787eb624) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Materials/Demo_floor.mat using Guid(f6c9741a573c25544beab037787eb624) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c7b6c0254dc67637e8e982b3135c24d') in 0.076763 seconds 
+  Import took 0.099784 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000361 seconds.
+  path: Assets/Ancient Modular Tombs/Materials/Fire_Bright.mat
+  artifactKey: Guid(1b97c727c73c335458faee0f7f1ebf89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Materials/Fire_Bright.mat using Guid(1b97c727c73c335458faee0f7f1ebf89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dee9d0b77f98913a0c6be6b0f24b9ea5') in 0.102889 seconds 
+  Import took 0.124711 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000757 seconds.
+  path: Assets/Ancient Modular Tombs/Materials/Rock_2.mat
+  artifactKey: Guid(d656acec93ba0344db4f96d2dbe03de1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Materials/Rock_2.mat using Guid(d656acec93ba0344db4f96d2dbe03de1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61df7816122db397ee44b18b46316a2f') in 0.503081 seconds 
+  Import took 0.526286 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000830 seconds.
+  path: Assets/Ancient Modular Tombs/Materials/Hand_torchfire.mat
+  artifactKey: Guid(362a298bd7042f243b680c2a8992ccae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Materials/Hand_torchfire.mat using Guid(362a298bd7042f243b680c2a8992ccae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12c5d011b43e61e951826e178a43954d') in 0.235504 seconds 
+  Import took 0.258829 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000606 seconds.
+  path: Assets/Ancient Modular Tombs/Materials/Rock_3.mat
+  artifactKey: Guid(fb6b0af3501d80f45875f0db6a6d4516) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Materials/Rock_3.mat using Guid(fb6b0af3501d80f45875f0db6a6d4516) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bfe4855b546e4da729be287881d0c14') in 0.545345 seconds 
+  Import took 0.572061 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000643 seconds.
+  path: Assets/Ancient Modular Tombs/Materials/Vase_1_v2.mat
+  artifactKey: Guid(3d92bdbbf43689b45ae521310cfcfd4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Materials/Vase_1_v2.mat using Guid(3d92bdbbf43689b45ae521310cfcfd4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b8b904a837e5d22fee2d0e953d6d1e5') in 1.372140 seconds 
+  Import took 1.406332 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000825 seconds.
+  path: Assets/Ancient Modular Tombs/Materials/Fire.mat
+  artifactKey: Guid(b092e55ae389faf4bbf66ffa99a01ae8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Materials/Fire.mat using Guid(b092e55ae389faf4bbf66ffa99a01ae8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2fe394465cae20d70b73fda7cb6e07b') in 0.093813 seconds 
+  Import took 0.113008 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000679 seconds.
+  path: Assets/Ancient Modular Tombs/Materials/SmokeDark.mat
+  artifactKey: Guid(7b8c769ed1cc4fb4bad73acdfa601e23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Materials/SmokeDark.mat using Guid(7b8c769ed1cc4fb4bad73acdfa601e23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0484ec9e21a4f0e5dfe589caf7eb9614') in 0.075400 seconds 
+  Import took 0.097445 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000635 seconds.
+  path: Assets/Ancient Modular Tombs/Materials/Tile.mat
+  artifactKey: Guid(743b374472681ee4497fa69464c7db9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Materials/Tile.mat using Guid(743b374472681ee4497fa69464c7db9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85b296761ffce0f9dbba7c11e3c92ac3') in 0.602305 seconds 
+  Import took 0.627338 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000688 seconds.
+  path: Assets/Ancient Modular Tombs/Materials/FireSparkle.mat
+  artifactKey: Guid(b82c21db99459ed44bd1f4a73dfc6dd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Materials/FireSparkle.mat using Guid(b82c21db99459ed44bd1f4a73dfc6dd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a946513c94a7b0f8f278ab1ea47ab21') in 0.073225 seconds 
+  Import took 0.094745 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000611 seconds.
+  path: Assets/Ancient Modular Tombs/Materials/Rock_1.mat
+  artifactKey: Guid(5654f31872f1e934bbfad7ae492ea3ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Materials/Rock_1.mat using Guid(5654f31872f1e934bbfad7ae492ea3ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc595e552109c93b29e1b24823b44360') in 0.507544 seconds 
+  Import took 0.532893 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 49.766147 seconds.
+  path: Assets/Ancient Modular Tombs/Materials
+  artifactKey: Guid(f0840ef2465bd204d99a595f0bbb5756) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Materials using Guid(f0840ef2465bd204d99a595f0bbb5756) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bf1d34082708dfa89e01902f8efda09') in 0.018966 seconds 
+  Import took 0.038939 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.973816 seconds.
+  path: Assets/Ancient Modular Tombs/Materials/Stone_gate.anim
+  artifactKey: Guid(da263adc27dd76d4fb9166ee7199a3e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Materials/Stone_gate.anim using Guid(da263adc27dd76d4fb9166ee7199a3e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21642d1770a79e28b951de45c434fd79') in 0.030159 seconds 
+  Import took 0.049807 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 564.910474 seconds.
+  path: Assets/Ancient Modular Tombs/Materials/Anubis_statue.mat
+  artifactKey: Guid(f863523e21bfb50499af687b7ec203ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Materials/Anubis_statue.mat using Guid(f863523e21bfb50499af687b7ec203ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '419a02906e17afcf4107fae03f24ccf3') in 0.781843 seconds 
+  Import took 0.808266 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.319964 seconds.
+  path: Assets/Ancient Modular Tombs/Materials/Column.mat
+  artifactKey: Guid(40c0b97af8b33aa49a8631b2a36d4871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Materials/Column.mat using Guid(40c0b97af8b33aa49a8631b2a36d4871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63e5c68c5c38dec6f3ef040dd84dff0f') in 0.695085 seconds 
+  Import took 0.723627 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000634 seconds.
+  path: Assets/Ancient Modular Tombs/Materials/SandRock_A.mat
+  artifactKey: Guid(60c45c54ac2612d4ea82e374d1128caf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Materials/SandRock_A.mat using Guid(60c45c54ac2612d4ea82e374d1128caf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d7e1358a1b8268bc06f9b73298a5650') in 1.592624 seconds 
+  Import took 1.618951 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000697 seconds.
+  path: Assets/Ancient Modular Tombs/Materials/Horus_statue.mat
+  artifactKey: Guid(96c5ad94b8374974388e544c375903cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Materials/Horus_statue.mat using Guid(96c5ad94b8374974388e544c375903cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02a71e151c49a396e9a43763dbfcec04') in 0.559920 seconds 
+  Import took 0.583780 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000859 seconds.
+  path: Assets/Ancient Modular Tombs/Materials/Rock_3.mat
+  artifactKey: Guid(fb6b0af3501d80f45875f0db6a6d4516) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Materials/Rock_3.mat using Guid(fb6b0af3501d80f45875f0db6a6d4516) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1afd0d189cbc54eb523348589cfb65ad') in 0.577661 seconds 
+  Import took 0.606648 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000779 seconds.
+  path: Assets/Ancient Modular Tombs/Materials/Vase_1_v2.mat
+  artifactKey: Guid(3d92bdbbf43689b45ae521310cfcfd4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Materials/Vase_1_v2.mat using Guid(3d92bdbbf43689b45ae521310cfcfd4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8277161267eb9c7545388e4969acf842') in 0.188538 seconds 
+  Import took 0.210125 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 145.702735 seconds.
+  path: Assets/Ancient Modular Tombs/Materials/New Lighting Settings.lighting
+  artifactKey: Guid(f6687916ce0a7ac4ca3e3d31ff593f7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Materials/New Lighting Settings.lighting using Guid(f6687916ce0a7ac4ca3e3d31ff593f7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb09bd6462c884e05351300e198681af') in 0.035664 seconds 
+  Import took 0.062565 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6202.175068 seconds.
+  path: Assets/Ancient Modular Tombs/Prefabs/Torchfire_metall_2.prefab
+  artifactKey: Guid(f32ea68cf20a6f540b96d709d697a4f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Prefabs/Torchfire_metall_2.prefab using Guid(f32ea68cf20a6f540b96d709d697a4f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ece6bb06010c5b3cea295ccd124bbefc') in 1.204892 seconds 
+  Import took 1.273526 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.201729 seconds.
+  path: Assets/Ancient Modular Tombs/Prefabs/Torchfire_metall_2.prefab
+  artifactKey: Guid(f32ea68cf20a6f540b96d709d697a4f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Prefabs/Torchfire_metall_2.prefab using Guid(f32ea68cf20a6f540b96d709d697a4f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76e4929dfc43491235281314828ea19f') in 0.829572 seconds 
+  Import took 0.852510 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000540 seconds.
+  path: Assets/Ancient Modular Tombs/Prefabs/Torchfire_metall_2.prefab
+  artifactKey: Guid(f32ea68cf20a6f540b96d709d697a4f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Prefabs/Torchfire_metall_2.prefab using Guid(f32ea68cf20a6f540b96d709d697a4f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d9b5bf7635de69de55808246f2eaf32') in 0.823342 seconds 
+  Import took 0.846491 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000589 seconds.
+  path: Assets/Ancient Modular Tombs/Prefabs/Torchfire_metall_2.prefab
+  artifactKey: Guid(f32ea68cf20a6f540b96d709d697a4f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ancient Modular Tombs/Prefabs/Torchfire_metall_2.prefab using Guid(f32ea68cf20a6f540b96d709d697a4f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7164d2219b93513bc28e8516831c2f3e') in 0.781665 seconds 
+  Import took 0.807987 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.526788 seconds.
+  path: Assets/ExampleAssets/Prefabs/Construction Light Low.prefab
+  artifactKey: Guid(bf0a225a9ff184f2789f3036faaa9150) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Prefabs/Construction Light Low.prefab using Guid(bf0a225a9ff184f2789f3036faaa9150) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72f8e4a64774420a3f29b514cb92de0c') in 3.025508 seconds 
+  Import took 3.047916 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000634 seconds.
+  path: Assets/ExampleAssets/Prefabs/Workbench_LOD1.prefab
+  artifactKey: Guid(38d5ecfa2b93c4095b4cc5d4a590e676) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Prefabs/Workbench_LOD1.prefab using Guid(38d5ecfa2b93c4095b4cc5d4a590e676) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1795c22e97aa8d11e6853107e20d9bbf') in 2.252226 seconds 
+  Import took 2.281073 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000455 seconds.
+  path: Assets/ExampleAssets/Prefabs/Paint Supplies.prefab
+  artifactKey: Guid(283e6530a665e4513959d1cd4883682f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Prefabs/Paint Supplies.prefab using Guid(283e6530a665e4513959d1cd4883682f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4070c194aa43b072c65e5d788fe89d16') in 4.853315 seconds 
+  Import took 4.880121 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000917 seconds.
+  path: Assets/ExampleAssets/Prefabs/Props.prefab
+  artifactKey: Guid(85dfab9623c67784fa7894de63cd1604) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Prefabs/Props.prefab using Guid(85dfab9623c67784fa7894de63cd1604) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1ffe5ec2cb00d1b1d9ad6edb8ffa8c0') in 2.964382 seconds 
+  Import took 2.990558 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000642 seconds.
+  path: Assets/ExampleAssets/Prefabs/Workshop Set.prefab
+  artifactKey: Guid(a87f0180d46fd334b9025d0314a0dc70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Prefabs/Workshop Set.prefab using Guid(a87f0180d46fd334b9025d0314a0dc70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b03150ace2b0c968e176c720212844b0') in 0.497447 seconds 
+  Import took 0.524291 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000852 seconds.
+  path: Assets/ExampleAssets/Prefabs/Workbench_LOD0.prefab
+  artifactKey: Guid(c0adcaeba3022437293536832628fdf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Prefabs/Workbench_LOD0.prefab using Guid(c0adcaeba3022437293536832628fdf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c406dc9c14b9fb2443da870b669af45') in 0.205683 seconds 
+  Import took 0.226688 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000645 seconds.
+  path: Assets/ExampleAssets/Prefabs/Workbench.prefab
+  artifactKey: Guid(8850d132797ff49298ba781e8e1c9bfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Prefabs/Workbench.prefab using Guid(8850d132797ff49298ba781e8e1c9bfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f4102cef742bb0c96c7cbf3e131b40e') in 0.433687 seconds 
+  Import took 0.460945 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 411.076386 seconds.
+  path: Assets/torch/model/etincelles.mat
+  artifactKey: Guid(2ad1606db33c2ac4985dffd7254af346) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/torch/model/etincelles.mat using Guid(2ad1606db33c2ac4985dffd7254af346) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69d8093d8712b725f3a23e0c0e6c0f8d') in 1.200975 seconds 
+  Import took 1.232827 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001135 seconds.
+  path: Assets/torch/model/fumee.mat
+  artifactKey: Guid(b796782c2047c554cb62dc696ef1ad85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/torch/model/fumee.mat using Guid(b796782c2047c554cb62dc696ef1ad85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce083f06907efa65161f314e26143140') in 1.166702 seconds 
+  Import took 1.191968 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000734 seconds.
+  path: Assets/torch/model/torch_flam4.bmp
+  artifactKey: Guid(bd63c59298326a543a3917aa28fd3594) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/torch/model/torch_flam4.bmp using Guid(bd63c59298326a543a3917aa28fd3594) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44a9693c0bc98caec4274526ff73de77') in 0.149665 seconds 
+  Import took 0.171143 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000753 seconds.
+  path: Assets/torch/model/torch_flame2.mat
+  artifactKey: Guid(41d718ff9b0819444b6aa43e60ef86bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/torch/model/torch_flame2.mat using Guid(41d718ff9b0819444b6aa43e60ef86bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c572d0a729ea3a70660fed8ec780e15') in 0.050495 seconds 
+  Import took 0.070562 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000588 seconds.
+  path: Assets/torch/model/torch_flam6.bmp
+  artifactKey: Guid(4031a5f91efc0a44fa776a27782a7eb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/torch/model/torch_flam6.bmp using Guid(4031a5f91efc0a44fa776a27782a7eb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '620faebd2422738d179dec99d8f0c72d') in 0.039906 seconds 
+  Import took 0.059627 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000653 seconds.
+  path: Assets/torch/model/etincelles.tga
+  artifactKey: Guid(313f05f90f049694f94ca3f471ec53db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/torch/model/etincelles.tga using Guid(313f05f90f049694f94ca3f471ec53db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '963aeb5d10cb4d1a580f948014ae9a32') in 0.039387 seconds 
+  Import took 0.062822 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000630 seconds.
+  path: Assets/torch/model/fumee.tga
+  artifactKey: Guid(db747b6196c1c194aab4dd584473aeeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/torch/model/fumee.tga using Guid(db747b6196c1c194aab4dd584473aeeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3704c4a5de3875aab1a5d63dc43e379') in 0.043889 seconds 
+  Import took 0.068210 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000457 seconds.
+  path: Assets/torch/model/torch.mat
+  artifactKey: Guid(95b7f65f4132c7640b8803c5c35ee2f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/torch/model/torch.mat using Guid(95b7f65f4132c7640b8803c5c35ee2f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e7b2d1324cac76ac5e40227b3bac404') in 1.410720 seconds 
+  Import took 1.433819 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000712 seconds.
+  path: Assets/torch/model/torch_flame.mat
+  artifactKey: Guid(b1ffcd09e833df944b2bcdfa55278ee2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/torch/model/torch_flame.mat using Guid(b1ffcd09e833df944b2bcdfa55278ee2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b0abb6a07e57786ee6c8060af887b11') in 0.067618 seconds 
+  Import took 0.093336 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000578 seconds.
+  path: Assets/torch/model/torche.3DS
+  artifactKey: Guid(622107dd3c4416a4d9fcc501f396d549) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/torch/model/torche.3DS using Guid(622107dd3c4416a4d9fcc501f396d549) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44d3a085da40826c170c9e7ebf9f150b') in 1.908567 seconds 
+  Import took 1.935167 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000996 seconds.
+  path: Assets/torch/scene/wallstone.3DS
+  artifactKey: Guid(69ec7fc160c05b24590cf0856f85aa5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/torch/scene/wallstone.3DS using Guid(69ec7fc160c05b24590cf0856f85aa5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6538c34c7e7379e587d09d178366d8e8') in 0.082756 seconds 
+  Import took 0.103641 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000646 seconds.
+  path: Assets/torch/model/torch_NORM.jpg
+  artifactKey: Guid(5e01893a572a968489c8791f4397d2e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/torch/model/torch_NORM.jpg using Guid(5e01893a572a968489c8791f4397d2e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74d3265e80155dd098f14ebffa57e72d') in 0.089648 seconds 
+  Import took 0.111109 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000671 seconds.
+  path: Assets/torch/model/torch_DIF.tga
+  artifactKey: Guid(a453357a3afb5c9468e7636e7e55452a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/torch/model/torch_DIF.tga using Guid(a453357a3afb5c9468e7636e7e55452a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40d787fef247efe8feceb300f69a6fa7') in 0.112430 seconds 
+  Import took 0.132142 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.377916 seconds.
+  path: Assets/torch/scene/model
+  artifactKey: Guid(bed68dfd578ea9d4faac1ad4dc5b396e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/torch/scene/model using Guid(bed68dfd578ea9d4faac1ad4dc5b396e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffa7c34576124af8f06cbc1328caf791') in 0.013693 seconds 
+  Import took 0.027816 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.119496 seconds.
+  path: Assets/torch/scene/model/roc_diffus.tga
+  artifactKey: Guid(45848f544d0b36b40a8ba900f49de973) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/torch/scene/model/roc_diffus.tga using Guid(45848f544d0b36b40a8ba900f49de973) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3674867e78874a2dbd56970d2823c7f0') in 0.094110 seconds 
+  Import took 0.148358 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000585 seconds.
+  path: Assets/torch/scene/model/roc_normal.jpg
+  artifactKey: Guid(a2b5b4955bb0f564c8ddb7168d16fab2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/torch/scene/model/roc_normal.jpg using Guid(a2b5b4955bb0f564c8ddb7168d16fab2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4740409f76872710daf562b9885dd04b') in 0.085770 seconds 
+  Import took 0.105202 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000722 seconds.
+  path: Assets/torch/scene/model/roc_mat.mat
+  artifactKey: Guid(721072bc0bc4d994fb5a80abcd4db7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/torch/scene/model/roc_mat.mat using Guid(721072bc0bc4d994fb5a80abcd4db7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01cdeeea38a423b35bb7a5fb9352e448') in 0.183162 seconds 
+  Import took 0.204519 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.630273 seconds.
+  path: Assets/torch/Torch.prefab
+  artifactKey: Guid(1e5c742accdc1824fb01f98f446fa63c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/torch/Torch.prefab using Guid(1e5c742accdc1824fb01f98f446fa63c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90293cfe83001a48281a84b6ea1defe5') in 0.259679 seconds 
+  Import took 0.281907 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.132435 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.91 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.39 ms.
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\KDyte\Desktop\GitHub Repos\CoVRE_v2\Library\PackageCache\com.unity.xr.oculus@1.10.0\Runtime\OculusLoader.cs:250 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\KDyte\Desktop\GitHub Repos\CoVRE_v2\Library\PackageCache\com.unity.xr.oculus@1.10.0\Runtime\OculusLoader.cs:235 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00032] in <695d1cc93cca45069c528c15c9fdd749>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00048] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x00047] in <97ba64834c8f4edc84e3d8e30b04f122>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+- Completed reload, in  5.320 seconds
+Domain Reload Profiling:
+	ReloadAssembly (5323ms)
+		BeginReloadAssembly (925ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (47ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (375ms)
+		EndReloadAssembly (4095ms)
+			LoadAssemblies (589ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (1134ms)
+			ReleaseScriptCaches (4ms)
+			RebuildScriptCaches (163ms)
+			SetupLoadedEditorAssemblies (1676ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (17ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (4ms)
+				BeforeProcessingInitializeOnLoad (383ms)
+				ProcessInitializeOnLoadAttributes (1172ms)
+				ProcessInitializeOnLoadMethodAttributes (61ms)
+				AfterProcessingInitializeOnLoad (36ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (48ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 2.32 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.37 ms.
+Unloading 3511 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 182.4 MB.
+System memory in use after: 182.7 MB.
+
+Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 4223.
+Total: 12.201500 ms (FindLiveObjects: 1.057300 ms CreateObjectMapping: 0.821800 ms MarkObjects: 10.086600 ms  DeleteObjects: 0.232300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.054529 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.76 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.36 ms.
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\KDyte\Desktop\GitHub Repos\CoVRE_v2\Library\PackageCache\com.unity.xr.oculus@1.10.0\Runtime\OculusLoader.cs:250 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\KDyte\Desktop\GitHub Repos\CoVRE_v2\Library\PackageCache\com.unity.xr.oculus@1.10.0\Runtime\OculusLoader.cs:235 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00032] in <695d1cc93cca45069c528c15c9fdd749>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00048] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x00047] in <97ba64834c8f4edc84e3d8e30b04f122>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+- Completed reload, in  5.025 seconds
+Domain Reload Profiling:
+	ReloadAssembly (5026ms)
+		BeginReloadAssembly (526ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (14ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (127ms)
+		EndReloadAssembly (4247ms)
+			LoadAssemblies (599ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (1233ms)
+			ReleaseScriptCaches (5ms)
+			RebuildScriptCaches (219ms)
+			SetupLoadedEditorAssemblies (1671ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (16ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (3ms)
+				BeforeProcessingInitializeOnLoad (417ms)
+				ProcessInitializeOnLoadAttributes (1147ms)
+				ProcessInitializeOnLoadMethodAttributes (58ms)
+				AfterProcessingInitializeOnLoad (28ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (47ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 3.46 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.37 ms.
+Unloading 3512 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 191.2 MB.
+System memory in use after: 191.4 MB.
+
+Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 4228.
+Total: 12.599100 ms (FindLiveObjects: 0.771600 ms CreateObjectMapping: 0.390400 ms MarkObjects: 11.169400 ms  DeleteObjects: 0.260100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1876.972796 seconds.
+  path: Assets/HandTorch/OldHandTorch
+  artifactKey: Guid(22ea16b69757e4f409214706eb627866) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HandTorch/OldHandTorch using Guid(22ea16b69757e4f409214706eb627866) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c37444f418c04096967743ffaf28b76d') in 0.041064 seconds 
+  Import took 0.066389 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.556949 seconds.
+  path: Assets/HandTorch/OldHandTorch/Prefaps
+  artifactKey: Guid(3c42a44b23632c6488ef8084add1e103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HandTorch/OldHandTorch/Prefaps using Guid(3c42a44b23632c6488ef8084add1e103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34f1c051f6806809bc9f9fda8201222f') in 0.017529 seconds 
+  Import took 0.075902 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.034670 seconds.
+  path: Assets/HandTorch/OldHandTorch/Prefaps/OldHandTorch.prefab
+  artifactKey: Guid(4745d1d7800129342a1b23f92c31715a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HandTorch/OldHandTorch/Prefaps/OldHandTorch.prefab using Guid(4745d1d7800129342a1b23f92c31715a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '034a644b5af619ae832053ce38553272') in 2.335187 seconds 
+  Import took 2.359250 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.879342 seconds.
+  path: Assets/HandTorch/OldHandTorch/Material/OldHandTorch.mat
+  artifactKey: Guid(50827137e3152a743abc4f1172eb024d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HandTorch/OldHandTorch/Material/OldHandTorch.mat using Guid(50827137e3152a743abc4f1172eb024d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1be92f6d6355143c32d6a4c19abfa4e5') in 0.693128 seconds 
+  Import took 0.713215 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.191545 seconds.
+  path: Assets/HandTorch/OldHandTorch/Textures/OldHandTorch_OldHandTorch_AlbedoTransparency.png
+  artifactKey: Guid(026a26a427d8f844fbde145b3176eee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HandTorch/OldHandTorch/Textures/OldHandTorch_OldHandTorch_AlbedoTransparency.png using Guid(026a26a427d8f844fbde145b3176eee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2dd6b82e53b7b9bc6bc42cb31d6cc366') in 0.224470 seconds 
+  Import took 0.245511 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000821 seconds.
+  path: Assets/HandTorch/OldHandTorch/Textures/OldHandTorch_OldHandTorch_Normal.png
+  artifactKey: Guid(c7d69cb527c984949b4d90f854332ced) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HandTorch/OldHandTorch/Textures/OldHandTorch_OldHandTorch_Normal.png using Guid(c7d69cb527c984949b4d90f854332ced) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9a066e16684530444eeabfc39c6bd35') in 0.208425 seconds 
+  Import took 0.229462 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000685 seconds.
+  path: Assets/HandTorch/OldHandTorch/Textures/OldHandTorch_OldHandTorch_MetallicSmoothness.png
+  artifactKey: Guid(1ab6c5fa265def44e9b5e06c445b04d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HandTorch/OldHandTorch/Textures/OldHandTorch_OldHandTorch_MetallicSmoothness.png using Guid(1ab6c5fa265def44e9b5e06c445b04d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f63778559877dd71f727cd96ccbad000') in 0.239146 seconds 
+  Import took 0.259202 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.885969 seconds.
+  path: Assets/Scenes/main/Lightmap-0_comp_dir.png
+  artifactKey: Guid(049e10c3f83ed7d42aca63b7e35a4204) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/main/Lightmap-0_comp_dir.png using Guid(049e10c3f83ed7d42aca63b7e35a4204) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '935aa6e3dec56742cff00a76df4e193c') in 0.083947 seconds 
+  Import took 0.101877 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000588 seconds.
+  path: Assets/Scenes/main/Lightmap-1_comp_light.exr
+  artifactKey: Guid(371f540429f621141b70d1c1d0918448) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/main/Lightmap-1_comp_light.exr using Guid(371f540429f621141b70d1c1d0918448) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f4be9c10796777a802ca73781afb7fb') in 1.122345 seconds 
+  Import took 1.142672 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000718 seconds.
+  path: Assets/Scenes/main/ReflectionProbe-0.exr
+  artifactKey: Guid(b3bf3f37bdafa344d85a5f75bd7a606c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/main/ReflectionProbe-0.exr using Guid(b3bf3f37bdafa344d85a5f75bd7a606c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed0b158fd82ecf9c470c2e9062347a06') in 1.117416 seconds 
+  Import took 1.137192 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000843 seconds.
+  path: Assets/Scenes/main/Lightmap-0_comp_light.exr
+  artifactKey: Guid(aed92ef4cf7a15445bf2f71976235005) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/main/Lightmap-0_comp_light.exr using Guid(aed92ef4cf7a15445bf2f71976235005) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58ad16e2ec527ceca958549684abd7f2') in 0.081808 seconds 
+  Import took 0.102415 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000853 seconds.
+  path: Assets/Scenes/main/Lightmap-1_comp_dir.png
+  artifactKey: Guid(1d4a191898304ab4ca1d5a6eb34d4b35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/main/Lightmap-1_comp_dir.png using Guid(1d4a191898304ab4ca1d5a6eb34d4b35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a3c7b8dcc9c273569ad01736c438696') in 0.091039 seconds 
+  Import took 0.109976 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 32.454088 seconds.
+  path: Assets/HandTorch/OldHandTorch/Assets/OldHandTorch.fbx
+  artifactKey: Guid(f423c6ee2a98ffa4bb64fe92380f2581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HandTorch/OldHandTorch/Assets/OldHandTorch.fbx using Guid(f423c6ee2a98ffa4bb64fe92380f2581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a4f1006d7969f0ac54a588a3172b46a') in 2.218288 seconds 
+  Import took 2.242197 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.608954 seconds.
+  path: Assets/HandTorch/OldHandTorch/Icon/Torch.PNG
+  artifactKey: Guid(f7b79d41f9021494ead8e68a08c09371) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HandTorch/OldHandTorch/Icon/Torch.PNG using Guid(f7b79d41f9021494ead8e68a08c09371) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '811c65220c220022dc3104fc05b9cf8f') in 0.065502 seconds 
+  Import took 0.086541 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.054754 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.79 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.38 ms.
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\KDyte\Desktop\GitHub Repos\CoVRE_v2\Library\PackageCache\com.unity.xr.oculus@1.10.0\Runtime\OculusLoader.cs:250 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\KDyte\Desktop\GitHub Repos\CoVRE_v2\Library\PackageCache\com.unity.xr.oculus@1.10.0\Runtime\OculusLoader.cs:235 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00032] in <695d1cc93cca45069c528c15c9fdd749>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00048] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x00047] in <97ba64834c8f4edc84e3d8e30b04f122>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+- Completed reload, in  4.735 seconds
+Domain Reload Profiling:
+	ReloadAssembly (4737ms)
+		BeginReloadAssembly (553ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (19ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (139ms)
+		EndReloadAssembly (3955ms)
+			LoadAssemblies (607ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (1106ms)
+			ReleaseScriptCaches (4ms)
+			RebuildScriptCaches (154ms)
+			SetupLoadedEditorAssemblies (1556ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (15ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (3ms)
+				BeforeProcessingInitializeOnLoad (367ms)
+				ProcessInitializeOnLoadAttributes (1085ms)
+				ProcessInitializeOnLoadMethodAttributes (55ms)
+				AfterProcessingInitializeOnLoad (28ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (60ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 2.76 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.41 ms.
+Unloading 3510 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 183.1 MB.
+System memory in use after: 183.3 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 4266.
+Total: 13.297500 ms (FindLiveObjects: 0.825700 ms CreateObjectMapping: 0.355000 ms MarkObjects: 11.643800 ms  DeleteObjects: 0.468500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
