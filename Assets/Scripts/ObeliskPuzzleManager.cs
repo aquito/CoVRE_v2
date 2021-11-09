@@ -36,6 +36,10 @@ public class ObeliskPuzzleManager : MonoBehaviour
 
     private AudioSource audioSource; // need to define this object to get access to it later
 
+    [SerializeField]
+    private GameObject doorToOpen;
+
+
     private void Start()
     {
         // defining the editor-exposed starting rotations as quaternions, used in instantiating below
@@ -46,6 +50,8 @@ public class ObeliskPuzzleManager : MonoBehaviour
         GameObject.Instantiate(obeliskBlockPrefab, topBlockSlot.position, topBlockRotation, topBlockSlot.transform);
         GameObject.Instantiate(obeliskBlockPrefab, middleBlockSlot.position, middleBlockRotation, middleBlockSlot.transform);
         GameObject.Instantiate(obeliskBlockPrefab, bottomBlockSlot.position, bottomBlockRotation, bottomBlockSlot.transform);
+
+        
 
         blocks = GameObject.FindGameObjectsWithTag("ObeliskBlock"); // finding the objects just instantiated and putting them into the array
         audioSource = GetComponent<AudioSource>(); // getting access to the audiosource component in the object to play audio clips
@@ -98,10 +104,14 @@ public class ObeliskPuzzleManager : MonoBehaviour
                  
                 Debug.Log("Puzzle SOLVED!"); // just a debugging message to the console
 
+                doorToOpen.GetComponent<OpenDoor>().MoveDoorUp(); // run the function on the door object via its script
+                
                 isPuzzleSolved = true; // set the puzzle solved so this does not run more than once
+
+               
             }
-            
-            
+
+           
         }
     }
 
