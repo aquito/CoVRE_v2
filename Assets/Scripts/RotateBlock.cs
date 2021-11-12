@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class RotateBlock : MonoBehaviour
 {
@@ -8,20 +9,22 @@ public class RotateBlock : MonoBehaviour
     private Quaternion obeliskRotation; // quaternion is how unity handles rotations so need to get that from object
  
     private Quaternion ninetyDegreeRotation; // and define one for the 90-degree rotation
+
+    private XRGrabInteractable xrGrabInteractable;
    
     private void Start()
     {
         obeliskTransform = GetComponent<Transform>(); // get access to the object's transform
         obeliskRotation = obeliskTransform.rotation;
-        ninetyDegreeRotation = Quaternion.Euler(0, -90, 0); 
-      
+        ninetyDegreeRotation = Quaternion.Euler(0, -90, 0);
+        xrGrabInteractable = GetComponent<XRGrabInteractable>(); // get the grab component in order to disable during rotation
 
     }
 
     public void RotateObeliskPart() // function to rotate the block
     {
-
-        StartCoroutine(RotateMe(ninetyDegreeRotation.eulerAngles, 0.8f)); // launching the coroutine; using coroutine to get a smooth rotation
+        xrGrabInteractable.enabled = false; // deactivating the grab component to prevent more grabs while it's rotating
+       StartCoroutine(RotateMe(ninetyDegreeRotation.eulerAngles, 0.8f)); // launching the coroutine; using coroutine to get a smooth rotation
        
     }
 
@@ -34,6 +37,7 @@ public class RotateBlock : MonoBehaviour
             transform.rotation = Quaternion.Slerp(fromAngle, toAngle, t); // this actually rotates the object
             yield return null; // this you need at the end of a coroutine to tell the function it's work is done
         }
+        xrGrabInteractable.enabled = true; // reactivating the grab now that the rotation is done
     }
 
 }

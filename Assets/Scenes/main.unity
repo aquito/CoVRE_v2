@@ -462,6 +462,11 @@ MonoBehaviour:
   m_TeleportationProvider: {fileID: 0}
   m_MatchOrientation: 0
   m_TeleportTrigger: 0
+--- !u!4 &149844099 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1992986471501568429, guid: 9c5b265436260df41a5b8a32dba64e7b, type: 3}
+  m_PrefabInstance: {fileID: 724203969}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &152532502
 GameObject:
   m_ObjectHideFlags: 0
@@ -1958,14 +1963,46 @@ PrefabInstance:
       propertyPath: m_Name
       value: ObeliskPuzzleManager
       objectReference: {fileID: 0}
-    - target: {fileID: 1992986469642937384, guid: 9c5b265436260df41a5b8a32dba64e7b, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     - target: {fileID: 1992986469642937385, guid: 9c5b265436260df41a5b8a32dba64e7b, type: 3}
       propertyPath: doorToOpen
       value: 
       objectReference: {fileID: 1769978113}
+    - target: {fileID: 1992986469642937385, guid: 9c5b265436260df41a5b8a32dba64e7b, type: 3}
+      propertyPath: startingRotation01
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 1992986469642937385, guid: 9c5b265436260df41a5b8a32dba64e7b, type: 3}
+      propertyPath: startingRotation02
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1992986469642937385, guid: 9c5b265436260df41a5b8a32dba64e7b, type: 3}
+      propertyPath: startingRotation03
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1992986469642937385, guid: 9c5b265436260df41a5b8a32dba64e7b, type: 3}
+      propertyPath: startingRotation04
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1992986469642937385, guid: 9c5b265436260df41a5b8a32dba64e7b, type: 3}
+      propertyPath: normalRealTimeObject
+      value: 
+      objectReference: {fileID: 1165409564}
+    - target: {fileID: 1992986469642937385, guid: 9c5b265436260df41a5b8a32dba64e7b, type: 3}
+      propertyPath: slot_ObeliskSlot_Bottom
+      value: 
+      objectReference: {fileID: 806225975}
+    - target: {fileID: 1992986469642937385, guid: 9c5b265436260df41a5b8a32dba64e7b, type: 3}
+      propertyPath: slot_ObeliskSlot_1stFromTop
+      value: 
+      objectReference: {fileID: 1558788272}
+    - target: {fileID: 1992986469642937385, guid: 9c5b265436260df41a5b8a32dba64e7b, type: 3}
+      propertyPath: slot_ObeliskSlot_2ndFromTop
+      value: 
+      objectReference: {fileID: 149844099}
+    - target: {fileID: 1992986469642937385, guid: 9c5b265436260df41a5b8a32dba64e7b, type: 3}
+      propertyPath: slot_ObeliskSlot_3rdFromTop
+      value: 
+      objectReference: {fileID: 1774156613}
     - target: {fileID: 1992986469642937386, guid: 9c5b265436260df41a5b8a32dba64e7b, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -2009,18 +2046,6 @@ PrefabInstance:
     - target: {fileID: 1992986469642937386, guid: 9c5b265436260df41a5b8a32dba64e7b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1992986470360754970, guid: 9c5b265436260df41a5b8a32dba64e7b, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
-    - target: {fileID: 1992986470373876180, guid: 9c5b265436260df41a5b8a32dba64e7b, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
-    - target: {fileID: 1992986471501568428, guid: 9c5b265436260df41a5b8a32dba64e7b, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c5b265436260df41a5b8a32dba64e7b, type: 3}
@@ -2244,6 +2269,11 @@ Transform:
   m_Father: {fileID: 1288612095}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &806225975 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1992986470360754971, guid: 9c5b265436260df41a5b8a32dba64e7b, type: 3}
+  m_PrefabInstance: {fileID: 724203969}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &851554266
 GameObject:
   m_ObjectHideFlags: 0
@@ -2806,6 +2836,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c9feddf326f843948a14c4f94fdaf5e5, type: 3}
+--- !u!1 &1165409564 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1572161834460568, guid: fa09f801372b3c24cbd365a8e75954b7, type: 3}
+  m_PrefabInstance: {fileID: 1694741561}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1202160813
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3836,6 +3871,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 473150, guid: bc7a1e843bea0834a8309a6fd31f1927, type: 3}
   m_PrefabInstance: {fileID: 1532838130}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1558788272 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1992986470373876181, guid: 9c5b265436260df41a5b8a32dba64e7b, type: 3}
+  m_PrefabInstance: {fileID: 724203969}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1564401028
 GameObject:
   m_ObjectHideFlags: 0
@@ -4786,6 +4826,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114501696213753918, guid: fa09f801372b3c24cbd365a8e75954b7, type: 3}
+      propertyPath: _joinRoomOnStart
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114501696213753918, guid: fa09f801372b3c24cbd365a8e75954b7, type: 3}
       propertyPath: _roomToJoinOnStart
       value: Escape Room
       objectReference: {fileID: 0}
@@ -5364,6 +5408,11 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!4 &1774156613 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7142256179549493576, guid: 9c5b265436260df41a5b8a32dba64e7b, type: 3}
+  m_PrefabInstance: {fileID: 724203969}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1874384723
 GameObject:
   m_ObjectHideFlags: 0
