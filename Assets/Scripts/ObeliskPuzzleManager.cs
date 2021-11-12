@@ -50,13 +50,14 @@ public class ObeliskPuzzleManager : MonoBehaviour
     private AudioSource audioSource; // need to define this object to get access to it later
 
     [SerializeField]
-    private GameObject doorToOpen;
+    public GameObject doorToOpen;
 
     private GameObject top01Block;
     private GameObject top02Block;
     private GameObject top03Block;
     private GameObject bottomBlock;
 
+    /*
 
     private void Awake()
     {
@@ -91,8 +92,33 @@ public class ObeliskPuzzleManager : MonoBehaviour
 
     }
 
+    */
+
     private void Start()
     {
+
+        // defining the editor-exposed starting rotations as quaternions, used in instantiating below
+        top01BlockRotation = Quaternion.Euler(0, startingRotation01, 0);
+        top02BlockRotation = Quaternion.Euler(0, startingRotation02, 0);
+        top03BlockRotation = Quaternion.Euler(0, startingRotation03, 0);
+        bottomBlockRotation = Quaternion.Euler(0, startingRotation04, 0);
+
+        top01Block = Realtime.Instantiate(obeliskBlockPrefab.name, rotation: top01BlockRotation, position: slot_ObeliskSlot_1stFromTop.position);
+        top01Block.transform.parent = slot_ObeliskSlot_1stFromTop;
+        blocks.Add(top01Block); // adding the objects just instantiated and putting them into the list
+
+        top02Block = Realtime.Instantiate(obeliskBlockPrefab.name, rotation: top02BlockRotation, position: slot_ObeliskSlot_2ndFromTop.position, ownedByClient: false);
+        top02Block.transform.parent = slot_ObeliskSlot_2ndFromTop;
+        blocks.Add(top02Block);
+
+        top03Block = Realtime.Instantiate(obeliskBlockPrefab.name, rotation: top03BlockRotation, position: slot_ObeliskSlot_3rdFromTop.position, ownedByClient: false);
+        top03Block.transform.parent = slot_ObeliskSlot_3rdFromTop;
+        blocks.Add(top03Block);
+
+        bottomBlock = Realtime.Instantiate(obeliskBlockPrefab.name, slot_ObeliskSlot_Bottom.position, bottomBlockRotation);
+        bottomBlock.transform.parent = slot_ObeliskSlot_Bottom;
+        blocks.Add(bottomBlock);
+
         audioSource = GetComponent<AudioSource>(); // getting access to the audiosource component in the object to play audio clips
     }
 
