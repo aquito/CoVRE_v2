@@ -5,33 +5,40 @@ using Normal.Realtime;
 
 public class ObeliskPuzzleManager : MonoBehaviour
 {
+
     [SerializeField]
-    private Transform slot_ObeliskSlot_1stFromTop; // serialising so the gameobjects can be added from the editor
+    private float yAxisIncrement; // this is exposed so the distance of the blocks from each other on the y axis acan be defined
+    //private Vector3 increment;
+
+    [SerializeField]
+    private GameManager gameManager;
+
+    [SerializeField]
+    private Transform puzzleStartingPosition; // this is the game object called ObeliskLocation on the scene that determines the top-most location of the blocks
+
     [SerializeField]
     private float startingRotation01;  // these are exposed to the editor so that the initial rotations can be shuffled
 
     [SerializeField]
-    private Transform slot_ObeliskSlot_2ndFromTop;
-    [SerializeField]
     private float startingRotation02;
 
-    [SerializeField]
-    private Transform slot_ObeliskSlot_3rdFromTop;
+    
     [SerializeField]
     private float startingRotation03;
 
-    [SerializeField]
-    private Transform slot_ObeliskSlot_Bottom;
+    
     [SerializeField]
     private float startingRotation04;
 
-    [SerializeField]
-    private GameObject obeliskBlockPrefab;
+    //private Collider collider;
 
-    [SerializeField]
-    public GameObject normalRealTimeObject; // this needs to be the Realtime + VR Player game object in the scene
+    //[SerializeField]
+   // private GameObject obeliskBlockPrefab;
 
-    private Realtime realTime; // we need access to the realtime script in the above object
+
+   //public GameObject normalRealTimeObject; // this needs to be the Realtime + VR Player game object in the scene
+
+   //private Realtime realTime; // we need access to the realtime script in the above object
 
     private bool isTop01BlockCorrect; // these will be used to set to true when correct rotation is in place
     private bool isTop02BlockCorrect;
@@ -39,6 +46,11 @@ public class ObeliskPuzzleManager : MonoBehaviour
     private bool isBottomBlockCorrect;
 
     private bool isPuzzleSolved; // this helps in tracking the state of the puzzle
+
+    private Vector3 top01BlockPosition; // these are stored to be used in the puzzle alignment checks
+    private Vector3 top02BlockPosition;
+    private Vector3 top03BlockPosition;
+    private Vector3 bottomBlockPosition;
 
     private Quaternion top01BlockRotation; // these enable to specify the starting rotations when instantiating the objects
     private Quaternion top02BlockRotation;
@@ -49,53 +61,42 @@ public class ObeliskPuzzleManager : MonoBehaviour
 
     private AudioSource audioSource; // need to define this object to get access to it later
 
-    [SerializeField]
-    public GameObject doorToOpen;
+    public GameObject doorToOpen; 
 
-    private GameObject top01Block;
+    private GameObject top01Block; // need to define these to be able to instantiate & check alignments
+    private GameObject top01Face;
     private GameObject top02Block;
+    private GameObject top02Face;  
     private GameObject top03Block;
+    private GameObject top03Face;
     private GameObject bottomBlock;
+    private GameObject bottomFace;
 
-    /*
-
-    private void Awake()
-    {
-        realTime = normalRealTimeObject.GetComponent<Realtime>(); // to check the connection status we need access to the realtime component
-        realTime.didConnectToRoom += Realtime_didConnectToRoom; // once the didConnectToRoom is true, run the Realtime_didConnectToRoom function
-
-    }
-
-    private void Realtime_didConnectToRoom(Realtime realTime) // so now once the client is connected to the room, we instantiate the blocks
-    {
-        // defining the editor-exposed starting rotations as quaternions, used in instantiating below
-        top01BlockRotation = Quaternion.Euler(0, startingRotation01, 0);
-        top02BlockRotation = Quaternion.Euler(0, startingRotation02, 0);
-        top03BlockRotation = Quaternion.Euler(0, startingRotation03, 0);
-        bottomBlockRotation = Quaternion.Euler(0, startingRotation04, 0);
-
-        top01Block = Realtime.Instantiate(obeliskBlockPrefab.name, rotation: top01BlockRotation, position: slot_ObeliskSlot_1stFromTop.position);
-        top01Block.transform.parent = slot_ObeliskSlot_1stFromTop;
-        blocks.Add(top01Block); // adding the objects just instantiated and putting them into the list
-
-        top02Block = Realtime.Instantiate(obeliskBlockPrefab.name, rotation: top02BlockRotation, position: slot_ObeliskSlot_2ndFromTop.position, ownedByClient: false);
-        top02Block.transform.parent = slot_ObeliskSlot_2ndFromTop;
-        blocks.Add(top02Block);
-
-        top03Block = Realtime.Instantiate(obeliskBlockPrefab.name, rotation: top03BlockRotation, position: slot_ObeliskSlot_3rdFromTop.position, ownedByClient: false);
-        top03Block.transform.parent = slot_ObeliskSlot_3rdFromTop;
-        blocks.Add(top03Block);
-
-        bottomBlock = Realtime.Instantiate(obeliskBlockPrefab.name, slot_ObeliskSlot_Bottom.position, bottomBlockRotation);
-        bottomBlock.transform.parent = slot_ObeliskSlot_Bottom;
-        blocks.Add(bottomBlock);
-
-    }
-
-    */
 
     private void Start()
     {
+        
+        //increment = new Vector3(0, yAxisIncrement, 0);
+
+        top01BlockPosition = puzzleStartingPosition.position;
+        top02BlockPosition = new Vector3(puzzleStartingPosition.position.x, puzzleStartingPosition.position.y - yAxisIncrement, puzzleStartingPosition.position.z);
+        top03BlockPosition = new Vector3(puzzleStartingPosition.position.x, puzzleStartingPosition.position.y - yAxisIncrement * 2, puzzleStartingPosition.position.z);
+        bottomBlockPosition = new Vector3(puzzleStartingPosition.position.x, puzzleStartingPosition.position.y - yAxisIncrement * 3, puzzleStartingPosition.position.z);
+
+       // collider = gameObject.GetComponent<Collider>();
+   
+       // InstantiateBlocks();
+
+        audioSource = GetComponent<AudioSource>(); // getting access to the audiosource component in the object to play audio clips
+
+       // Debug.Log(blocks.Count);
+       // collider.enabled = true;
+    }
+
+
+    private void InstantiateBlocks()
+    {
+        
 
         // defining the editor-exposed starting rotations as quaternions, used in instantiating below
         top01BlockRotation = Quaternion.Euler(0, startingRotation01, 0);
@@ -103,32 +104,47 @@ public class ObeliskPuzzleManager : MonoBehaviour
         top03BlockRotation = Quaternion.Euler(0, startingRotation03, 0);
         bottomBlockRotation = Quaternion.Euler(0, startingRotation04, 0);
 
-        top01Block = Realtime.Instantiate(obeliskBlockPrefab.name, rotation: top01BlockRotation, position: slot_ObeliskSlot_1stFromTop.position);
-        top01Block.transform.parent = slot_ObeliskSlot_1stFromTop;
+
+        // defining the increments for the block positions
+       // top01BlockPosition.position = puzzleStartingPosition.position;
+
+       // top02BlockPosition.position = top01BlockPosition.position;
+       // top03BlockPosition.position = top01BlockPosition.position + (increment * 2);
+      //  bottomBlockPosition.position = top01BlockPosition.position + (increment * 3);
+
+        // the blocks are instantiated into the top position and then incremented with the increment defined in the editor
+        top01Block = Realtime.Instantiate("ObeliskBlock", rotation: top01BlockRotation, position: top01BlockPosition);
+        top01Face = top01Block.GetComponentInChildren<Transform>().Find("Face").gameObject; // getting the child (face) and tagging it
+        top01Face.tag = "Face01";   
+
         blocks.Add(top01Block); // adding the objects just instantiated and putting them into the list
 
-        top02Block = Realtime.Instantiate(obeliskBlockPrefab.name, rotation: top02BlockRotation, position: slot_ObeliskSlot_2ndFromTop.position, ownedByClient: false);
-        top02Block.transform.parent = slot_ObeliskSlot_2ndFromTop;
+        top02Block = Realtime.Instantiate("ObeliskBlock", rotation: top02BlockRotation, position: top02BlockPosition);
+        top02Face = top02Block.GetComponentInChildren<Transform>().Find("Face").gameObject;
+        top02Face.tag = "Face02";
         blocks.Add(top02Block);
 
-        top03Block = Realtime.Instantiate(obeliskBlockPrefab.name, rotation: top03BlockRotation, position: slot_ObeliskSlot_3rdFromTop.position, ownedByClient: false);
-        top03Block.transform.parent = slot_ObeliskSlot_3rdFromTop;
+        top03Block = Realtime.Instantiate("ObeliskBlock", rotation: top03BlockRotation, position: top03BlockPosition);
+        top03Face = top03Block.GetComponentInChildren<Transform>().Find("Face").gameObject;
+        top03Face.tag = "Face03";   
         blocks.Add(top03Block);
 
-        bottomBlock = Realtime.Instantiate(obeliskBlockPrefab.name, slot_ObeliskSlot_Bottom.position, bottomBlockRotation);
-        bottomBlock.transform.parent = slot_ObeliskSlot_Bottom;
+        bottomBlock = Realtime.Instantiate("ObeliskBlock", rotation: bottomBlockRotation, position: bottomBlockPosition);
+        bottomFace = bottomBlock.GetComponentInChildren<Transform>().Find("Face").gameObject;
+        bottomFace.tag = "Face04";
         blocks.Add(bottomBlock);
 
-        audioSource = GetComponent<AudioSource>(); // getting access to the audiosource component in the object to play audio clips
+        
     }
 
 
     private void OnTriggerEnter(Collider other)
     {
+
        if(other != null) // this some protective programming to make sure the collider has not moved away before the checks
         {
             // checking that the object colliding is the face of the block (using tags) and which block slot is it colliding with
-            if (other.gameObject.tag == "ObeliskFace" && other.gameObject.transform.parent.parent.name == "ObeliskSlot_1stFromTop")
+            if (other.gameObject.tag == "Face01") 
             {
                 isTop01BlockCorrect = true; // setting this true so that all three can be checked together (see update function below)
 
@@ -136,14 +152,14 @@ public class ObeliskPuzzleManager : MonoBehaviour
             }
 
 
-            if (other.gameObject.tag == "ObeliskFace" && other.gameObject.transform.parent.parent.name == "ObeliskSlot_2ndFromTop")
+            if (other.gameObject.tag == "Face02")
             {
                 isTop02BlockCorrect = true;
 
                 Debug.Log("top 2nd block CORRECT!");
             }
 
-            if (other.gameObject.tag == "ObeliskFace" && other.gameObject.transform.parent.parent.name == "ObeliskSlot_3rdFromTop")
+            if (other.gameObject.tag == "Face03")
             {
                 isTop03BlockCorrect = true;
 
@@ -151,7 +167,7 @@ public class ObeliskPuzzleManager : MonoBehaviour
             }
 
 
-            if (other.gameObject.tag == "ObeliskFace" && other.gameObject.transform.parent.parent.name == "ObeliskSlot_Bottom")
+            if (other.gameObject.tag == "Face04")
             {
                 isBottomBlockCorrect = true;
 

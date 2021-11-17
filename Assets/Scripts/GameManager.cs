@@ -7,10 +7,10 @@ public class GameManager : MonoBehaviour
 {
 
     [SerializeField]
-    Transform obeliskLocation;
+    public Transform obeliskLocation;
 
     [SerializeField]
-    private GameObject puzzleManagerPrefab;
+    private GameObject puzzleManagerObject;
 
     [SerializeField]
     private GameObject doorToOpen;
@@ -24,13 +24,19 @@ public class GameManager : MonoBehaviour
 
     private ObeliskPuzzleManager obeliskPuzzleManager;
 
+    //public List<GameObject> blocks = new List<GameObject>(); // setting up an array so that changes to all blocks (e.g. switching material) can be done easily
+
     private void Awake()
     {
-        obeliskPuzzleManager = puzzleManagerPrefab.GetComponent<ObeliskPuzzleManager>();
+       obeliskPuzzleManager = puzzleManagerObject.GetComponent<ObeliskPuzzleManager>();
 
-        obeliskPuzzleManager.normalRealTimeObject = normalRealTimeObject;
+       // obeliskPuzzleManager.puzzleStartingPosition = obeliskLocation;
 
-        obeliskPuzzleManager.doorToOpen = doorToOpen;
+       // obeliskPuzzleManager.normalRealTimeObject = normalRealTimeObject;
+
+       // obeliskPuzzleManager.doorToOpen = doorToOpen;
+
+       // obeliskPuzzleManager.blocks = blocks;
 
         realTime = normalRealTimeObject.GetComponent<Realtime>(); // to check the connection status we need access to the realtime component
         realTime.didConnectToRoom += Realtime_didConnectToRoom; // once the didConnectToRoom is true, run the Realtime_didConnectToRoom function
@@ -39,10 +45,10 @@ public class GameManager : MonoBehaviour
 
     private void Realtime_didConnectToRoom(Realtime realTime)
     {
-        
-        
-        puzzleManager = Realtime.Instantiate("ObeliskPuzzleManager");
-        puzzleManager.transform.parent = obeliskLocation;
+
+       
+        puzzleManagerObject.SetActive(true);
+       
 
 
     }

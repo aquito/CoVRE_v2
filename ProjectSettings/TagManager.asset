@@ -6,6 +6,10 @@ TagManager:
   tags:
   - ObeliskBlock
   - ObeliskFace
+  - Face01
+  - Face02
+  - Face03
+  - Face04
   layers:
   - Default
   - TransparentFX
