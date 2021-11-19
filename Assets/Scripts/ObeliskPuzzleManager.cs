@@ -57,7 +57,7 @@ public class ObeliskPuzzleManager : MonoBehaviour
     private Quaternion top03BlockRotation;
     private Quaternion bottomBlockRotation;
 
-    private List<GameObject> blocks = new List<GameObject>(); // setting up an array so that changes to all blocks (e.g. switching material) can be done easily
+    // private List<GameObject> blocks = new List<GameObject>(); // setting up an array so that changes to all blocks (e.g. switching material) can be done easily
 
     private AudioSource audioSource; // need to define this object to get access to it later
 
@@ -93,7 +93,7 @@ public class ObeliskPuzzleManager : MonoBehaviour
        // collider.enabled = true;
     }
 
-
+    /*
     private void InstantiateBlocks()
     {
         
@@ -136,7 +136,7 @@ public class ObeliskPuzzleManager : MonoBehaviour
 
         
     }
-
+    */
 
     private void OnTriggerEnter(Collider other)
     {
@@ -186,14 +186,10 @@ public class ObeliskPuzzleManager : MonoBehaviour
             if (!isPuzzleSolved) // if puzzle remains unsolved, do the below
             {
 
-                foreach (GameObject obj in blocks) // cycle through each block in the array
-                { 
-                    obj.GetComponent<SwitchMaterial>().Switch(); // run the public function in the script attached to the block
-                }
+                gameManager.SwitchBlockMaterials();
+
 
                 audioSource.Play(); // play audio clip in the audio source component 
-                 
-                Debug.Log("Puzzle SOLVED!"); // just a debugging message to the console
 
                 doorToOpen.GetComponent<OpenDoor>().MoveDoorUp(); // run the function on the door object via its script
                 

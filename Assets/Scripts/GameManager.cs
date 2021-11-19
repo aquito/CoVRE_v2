@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Normal.Realtime;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class GameManager : MonoBehaviour
 {
@@ -24,7 +25,9 @@ public class GameManager : MonoBehaviour
 
     private ObeliskPuzzleManager obeliskPuzzleManager;
 
-    //public List<GameObject> blocks = new List<GameObject>(); // setting up an array so that changes to all blocks (e.g. switching material) can be done easily
+    //private List<GameObject> blocks; //= new List<GameObject>(); // setting up an array so that changes to all blocks (e.g. switching material) can be done easily
+
+    private GameObject[] blocks;
 
     private void Awake()
     {
@@ -48,10 +51,41 @@ public class GameManager : MonoBehaviour
 
        
         puzzleManagerObject.SetActive(true);
-       
+        blocks = GameObject.FindGameObjectsWithTag("ObeliskBlock");
+        Debug.Log(blocks.Length);
+
+
 
 
     }
 
+    public void SwitchBlockMaterials()
+    {
+        foreach (GameObject obj in blocks) // cycle through each block in the array
+        {
+            obj.GetComponent<SwitchMaterial>().Switch(); // run the public function in the script attached to the block
+        }
+
+       
+
+        Debug.Log("Puzzle SOLVED!"); // just a debugging message to the console
+
+    }
+
+    public void DisableXRInteractables()
+    {
+        foreach (GameObject obj in blocks) // cycle through each block in the array
+        {
+            obj.GetComponent<XRGrabInteractable>().enabled = false;// run the public function in the script attached to the block
+        }
+    }
+
+    public void EnableXRInteractables()
+    {
+        foreach (GameObject obj in blocks) // cycle through each block in the array
+        {
+            obj.GetComponent<XRGrabInteractable>().enabled = true;// run the public function in the script attached to the block
+        }
+    }
 
 }
