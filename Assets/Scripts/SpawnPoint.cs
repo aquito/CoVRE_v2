@@ -9,16 +9,25 @@ public class SpawnPoint : MonoBehaviour
 
     public List<Transform> spawnPoints;
 
+    [SerializeField]
+    private GameObject loadingOverlay;
+    private LoadingOverlay overlay;
+
     private Transform playerXRRigposition;
     private void Awake()
     {
+        
         // Subscribe to the didConnectToRoom event
         _realtime.didConnectToRoom += DidConnectToRoom;
     }
 
     private void Start()
     {
+        
         playerXRRigposition = gameObject.GetComponent<Transform>();
+        
+        
+
     }
 
     private void DidConnectToRoom(Realtime realtime)
@@ -28,8 +37,17 @@ public class SpawnPoint : MonoBehaviour
         // Fetch this client's clientID
         int localPlayerClientID = _realtime.clientID;
 
-        // TODO: Use the clientID to position the player
+        //check that the clientID is not greater than the number of predefined spawn points
+        if (localPlayerClientID > spawnPoints.Count)
+        {
+            localPlayerClientID = 0;
+        }
+
+        // Use the clientID to position the player
         playerXRRigposition.position = spawnPoints[localPlayerClientID].position;
 
+        //overlay = loadingOverlay.GetComponent<LoadingOverlay>();
+        //overlay.FadeIn();
+        loadingOverlay.SetActive(false);
     }
 }
