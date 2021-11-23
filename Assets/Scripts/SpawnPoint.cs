@@ -45,6 +45,7 @@ public class SpawnPoint : MonoBehaviour
 
         // Use the clientID to position the player
         playerXRRigposition.position = spawnPoints[localPlayerClientID].position;
+        playerXRRigposition.rotation = spawnPoints[localPlayerClientID].rotation;
 
         //overlay = loadingOverlay.GetComponent<LoadingOverlay>();
         //overlay.FadeIn();
