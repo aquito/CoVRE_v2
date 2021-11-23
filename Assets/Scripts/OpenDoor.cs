@@ -9,9 +9,6 @@ public class OpenDoor : MonoBehaviour
     private Vector3 doorYlimit; // the highest position to lift the door to on the y axis
 
     [SerializeField]
-    private Transform doorClosedPosition;
-
-    [SerializeField]
     private Transform doorOpenPosition;
 
     private AudioSource audioSource;
@@ -42,7 +39,7 @@ public class OpenDoor : MonoBehaviour
         isDoorGoodToMove = true;
         audioSource.Play();
 
-        Debug.Log("Starting to move door");
+        Debug.Log("Starting to move" + doorTransform.gameObject.name + " door");
     }
 
 }

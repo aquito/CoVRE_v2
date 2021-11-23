@@ -30,15 +30,7 @@ public class ObeliskPuzzleManager : MonoBehaviour
     [SerializeField]
     private float startingRotation04;
 
-    //private Collider collider;
 
-    //[SerializeField]
-   // private GameObject obeliskBlockPrefab;
-
-
-   //public GameObject normalRealTimeObject; // this needs to be the Realtime + VR Player game object in the scene
-
-   //private Realtime realTime; // we need access to the realtime script in the above object
 
     private bool isTop01BlockCorrect; // these will be used to set to true when correct rotation is in place
     private bool isTop02BlockCorrect;
@@ -61,7 +53,8 @@ public class ObeliskPuzzleManager : MonoBehaviour
 
     private AudioSource audioSource; // need to define this object to get access to it later
 
-    public GameObject doorToOpen; 
+    public GameObject doorRightToOpen;
+    public GameObject doorLeftToOpen;
 
     private GameObject top01Block; // need to define these to be able to instantiate & check alignments
     private GameObject top01Face;
@@ -75,22 +68,15 @@ public class ObeliskPuzzleManager : MonoBehaviour
 
     private void Start()
     {
-        
-        //increment = new Vector3(0, yAxisIncrement, 0);
 
         top01BlockPosition = puzzleStartingPosition.position;
         top02BlockPosition = new Vector3(puzzleStartingPosition.position.x, puzzleStartingPosition.position.y - yAxisIncrement, puzzleStartingPosition.position.z);
         top03BlockPosition = new Vector3(puzzleStartingPosition.position.x, puzzleStartingPosition.position.y - yAxisIncrement * 2, puzzleStartingPosition.position.z);
         bottomBlockPosition = new Vector3(puzzleStartingPosition.position.x, puzzleStartingPosition.position.y - yAxisIncrement * 3, puzzleStartingPosition.position.z);
 
-       // collider = gameObject.GetComponent<Collider>();
-   
-       // InstantiateBlocks();
-
         audioSource = GetComponent<AudioSource>(); // getting access to the audiosource component in the object to play audio clips
 
-       // Debug.Log(blocks.Count);
-       // collider.enabled = true;
+       
     }
 
     /*
@@ -191,8 +177,9 @@ public class ObeliskPuzzleManager : MonoBehaviour
 
                 audioSource.Play(); // play audio clip in the audio source component 
 
-                doorToOpen.GetComponent<OpenDoor>().MoveDoorUp(); // run the function on the door object via its script
-                
+                doorRightToOpen.GetComponent<OpenDoor>().MoveDoorUp(); // run the function on the door object via its script
+                doorLeftToOpen.GetComponent<OpenDoor>().MoveDoorUp(); // run the function on the door object via its script
+
                 isPuzzleSolved = true; // set the puzzle solved so this does not run more than once
 
                
