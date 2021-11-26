@@ -7,14 +7,8 @@ public class ObeliskPuzzleManager : MonoBehaviour
 {
 
     [SerializeField]
-    private float yAxisIncrement; // this is exposed so the distance of the blocks from each other on the y axis acan be defined
-    //private Vector3 increment;
-
-    [SerializeField]
     private GameManager gameManager;
 
-   // [SerializeField]
-   // private Transform puzzleStartingPosition; // this is the game object called ObeliskLocation on the scene that determines the top-most location of the blocks
 
     [SerializeField]
     private float startingRotation01;  // these are exposed to the editor so that the initial rotations can be shuffled
@@ -30,7 +24,14 @@ public class ObeliskPuzzleManager : MonoBehaviour
     [SerializeField]
     private float startingRotation04;
 
+    [SerializeField]
+    private GameObject topPuzzle;
 
+    [SerializeField]
+    private GameObject bottomPuzzle;
+
+    private BottomPuzzleCheck bottomPuzzleCheck;
+    private TopPuzzleCheck topPuzzleCheck;
 
     private bool isTop01BlockCorrect; // these will be used to set to true when correct rotation is in place
     private bool isTop02BlockCorrect;
@@ -69,10 +70,13 @@ public class ObeliskPuzzleManager : MonoBehaviour
     private void Start()
     {
 
-       // top01BlockPosition = puzzleStartingPosition.position;
-       // top02BlockPosition = new Vector3(puzzleStartingPosition.position.x, puzzleStartingPosition.position.y - yAxisIncrement, puzzleStartingPosition.position.z);
-       // top03BlockPosition = new Vector3(puzzleStartingPosition.position.x, puzzleStartingPosition.position.y - yAxisIncrement * 2, puzzleStartingPosition.position.z);
-       // bottomBlockPosition = new Vector3(puzzleStartingPosition.position.x, puzzleStartingPosition.position.y - yAxisIncrement * 3, puzzleStartingPosition.position.z);
+        // top01BlockPosition = puzzleStartingPosition.position;
+        // top02BlockPosition = new Vector3(puzzleStartingPosition.position.x, puzzleStartingPosition.position.y - yAxisIncrement, puzzleStartingPosition.position.z);
+        // top03BlockPosition = new Vector3(puzzleStartingPosition.position.x, puzzleStartingPosition.position.y - yAxisIncrement * 2, puzzleStartingPosition.position.z);
+        // bottomBlockPosition = new Vector3(puzzleStartingPosition.position.x, puzzleStartingPosition.position.y - yAxisIncrement * 3, puzzleStartingPosition.position.z);
+
+        topPuzzleCheck = topPuzzle.GetComponent<TopPuzzleCheck>();
+        bottomPuzzleCheck = bottomPuzzle.GetComponent<BottomPuzzleCheck>();
 
         audioSource = GetComponent<AudioSource>(); // getting access to the audiosource component in the object to play audio clips
 
@@ -122,7 +126,7 @@ public class ObeliskPuzzleManager : MonoBehaviour
 
         
     }
-    */
+    
 
     private void OnTriggerEnter(Collider other)
     {
@@ -164,10 +168,11 @@ public class ObeliskPuzzleManager : MonoBehaviour
         
 
     }
+    */
 
     private void Update()
     {
-        if(isTop01BlockCorrect && isTop02BlockCorrect && isTop03BlockCorrect && isBottomBlockCorrect) // are all blocks in correct rotation?
+        if(topPuzzleCheck.isBottomBlockCorrect && topPuzzleCheck.isTopBlockCorrect && bottomPuzzleCheck.isTopBlockCorrect && bottomPuzzleCheck.isBottomBlockCorrect) // are all blocks in correct rotation?
         {
             if (!isPuzzleSolved) // if puzzle remains unsolved, do the below
             {
