@@ -13,8 +13,8 @@ public class ObeliskPuzzleManager : MonoBehaviour
     [SerializeField]
     private GameManager gameManager;
 
-    [SerializeField]
-    private Transform puzzleStartingPosition; // this is the game object called ObeliskLocation on the scene that determines the top-most location of the blocks
+   // [SerializeField]
+   // private Transform puzzleStartingPosition; // this is the game object called ObeliskLocation on the scene that determines the top-most location of the blocks
 
     [SerializeField]
     private float startingRotation01;  // these are exposed to the editor so that the initial rotations can be shuffled
@@ -69,10 +69,10 @@ public class ObeliskPuzzleManager : MonoBehaviour
     private void Start()
     {
 
-        top01BlockPosition = puzzleStartingPosition.position;
-        top02BlockPosition = new Vector3(puzzleStartingPosition.position.x, puzzleStartingPosition.position.y - yAxisIncrement, puzzleStartingPosition.position.z);
-        top03BlockPosition = new Vector3(puzzleStartingPosition.position.x, puzzleStartingPosition.position.y - yAxisIncrement * 2, puzzleStartingPosition.position.z);
-        bottomBlockPosition = new Vector3(puzzleStartingPosition.position.x, puzzleStartingPosition.position.y - yAxisIncrement * 3, puzzleStartingPosition.position.z);
+       // top01BlockPosition = puzzleStartingPosition.position;
+       // top02BlockPosition = new Vector3(puzzleStartingPosition.position.x, puzzleStartingPosition.position.y - yAxisIncrement, puzzleStartingPosition.position.z);
+       // top03BlockPosition = new Vector3(puzzleStartingPosition.position.x, puzzleStartingPosition.position.y - yAxisIncrement * 2, puzzleStartingPosition.position.z);
+       // bottomBlockPosition = new Vector3(puzzleStartingPosition.position.x, puzzleStartingPosition.position.y - yAxisIncrement * 3, puzzleStartingPosition.position.z);
 
         audioSource = GetComponent<AudioSource>(); // getting access to the audiosource component in the object to play audio clips
 

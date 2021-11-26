@@ -18,7 +18,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &8796459093095306257
 Transform:
@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8796459093095306260}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.46999997}
+  m_LocalPosition: {x: 0.077, y: 0.12, z: 0.749}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8796459093297324145}
@@ -72,15 +72,15 @@ MonoBehaviour:
   - m_Vertices: 01000000
   m_SharedTextures: []
   m_Positions:
-  - {x: 0.22178149, y: 0.22332859, z: 4.698929}
-  - {x: 1.7782185, y: 0.22332859, z: 4.698929}
-  - {x: 0.5064988, y: 2.2233286, z: 4.4142113}
-  - {x: 1.4935012, y: 2.2233286, z: 4.4142113}
+  - {x: -0.7782185, y: -1, z: 0.14235878}
+  - {x: 0.7782185, y: -1, z: 0.14235878}
+  - {x: -0.4935012, y: 1, z: -0.14235878}
+  - {x: 0.4935012, y: 1, z: -0.14235878}
   m_Textures0:
-  - {x: -0.22178149, y: -0.4411573}
-  - {x: -1.7782185, y: -0.4411573}
-  - {x: -0.5064988, y: 1.579007}
-  - {x: -1.4935012, y: 1.579007}
+  - {x: 0.7782185, y: -1.0100821}
+  - {x: -0.7782185, y: -1.0100821}
+  - {x: 0.4935012, y: 1.0100821}
+  - {x: -0.4935012, y: 1.0100821}
   m_Textures2: []
   m_Textures3: []
   m_Tangents:
@@ -133,7 +133,7 @@ MeshRenderer:
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
   m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
+  m_SelectedEditorRenderState: 2
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
@@ -182,7 +182,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &8796459093139764544
 Transform:
@@ -192,7 +192,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8796459093139764551}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.03000021, y: 0, z: -0.14999998}
+  m_LocalPosition: {x: -0.65, y: 0.119999886, z: 0.035970688}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8796459093297324145}
@@ -236,15 +236,15 @@ MonoBehaviour:
   - m_Vertices: 00000000
   m_SharedTextures: []
   m_Positions:
-  - {x: 0.22178149, y: 0.22332859, z: 2.794322}
-  - {x: 0.22178149, y: 0.22332859, z: 4.3507595}
-  - {x: 0.5064988, y: 2.2233286, z: 3.0790396}
-  - {x: 0.5064988, y: 2.2233286, z: 4.066042}
+  - {x: -0.14235854, y: -1, z: -0.77821827}
+  - {x: -0.14235854, y: -1, z: 0.7782192}
+  - {x: 0.14235878, y: 1, z: -0.4935007}
+  - {x: 0.14235878, y: 1, z: 0.49350166}
   m_Textures0:
-  - {x: -2.794322, y: 0.2523568}
-  - {x: -4.3507595, y: 0.2523568}
-  - {x: -3.0790396, y: 2.272521}
-  - {x: -4.066042, y: 2.272521}
+  - {x: 0.77821827, y: -1.0100821}
+  - {x: -0.7782192, y: -1.0100821}
+  - {x: 0.4935007, y: 1.0100821}
+  - {x: -0.49350166, y: 1.0100821}
   m_Textures2: []
   m_Textures3: []
   m_Tangents:
@@ -297,7 +297,7 @@ MeshRenderer:
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
   m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
+  m_SelectedEditorRenderState: 2
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
@@ -346,7 +346,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &8796459093297324145
 Transform:
@@ -356,7 +356,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8796459093297324148}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.1, y: -1.68, z: 1.29}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8796459093139764544}
@@ -476,47 +476,47 @@ MonoBehaviour:
   - m_Vertices: 0d00000010000000
   m_SharedTextures: []
   m_Positions:
-  - {x: 0.5064988, y: 2.2233286, z: 3.9310102}
-  - {x: 1.4935012, y: 2.2233286, z: 3.9310102}
-  - {x: 0.5064988, y: 2.2233286, z: 2.9440079}
-  - {x: 1.4935012, y: 2.2233286, z: 2.9440079}
-  - {x: 0.22178149, y: 0.22332859, z: 4.215728}
-  - {x: 1.7782185, y: 0.22332859, z: 4.215728}
-  - {x: 0.5064988, y: 2.2233286, z: 3.9310102}
-  - {x: 1.4935012, y: 2.2233286, z: 3.9310102}
-  - {x: 0.22178149, y: 0.22332859, z: 2.6592903}
-  - {x: 0.22178149, y: 0.22332859, z: 4.215728}
-  - {x: 0.5064988, y: 2.2233286, z: 2.9440079}
-  - {x: 0.5064988, y: 2.2233286, z: 3.9310102}
-  - {x: 1.7782185, y: 0.22332859, z: 4.215728}
-  - {x: 1.7782185, y: 0.22332859, z: 2.6592903}
-  - {x: 1.4935012, y: 2.2233286, z: 3.9310102}
-  - {x: 1.4935012, y: 2.2233286, z: 2.9440079}
-  - {x: 1.7782185, y: 0.22332859, z: 2.6592903}
-  - {x: 0.22178149, y: 0.22332859, z: 2.6592903}
-  - {x: 1.4935012, y: 2.2233286, z: 2.9440079}
-  - {x: 0.5064988, y: 2.2233286, z: 2.9440079}
+  - {x: -0.49350142, y: 1, z: 0.4935012}
+  - {x: 0.49350095, y: 1, z: 0.4935012}
+  - {x: -0.49350142, y: 1, z: -0.4935012}
+  - {x: 0.49350095, y: 1, z: -0.4935012}
+  - {x: -0.77821875, y: -1, z: 0.77821875}
+  - {x: 0.77821827, y: -1, z: 0.77821875}
+  - {x: -0.49350142, y: 1, z: 0.4935012}
+  - {x: 0.49350095, y: 1, z: 0.4935012}
+  - {x: -0.77821875, y: -1, z: -0.77821875}
+  - {x: -0.77821875, y: -1, z: 0.77821875}
+  - {x: -0.49350142, y: 1, z: -0.4935012}
+  - {x: -0.49350142, y: 1, z: 0.4935012}
+  - {x: 0.77821827, y: -1, z: 0.77821875}
+  - {x: 0.77821827, y: -1, z: -0.77821875}
+  - {x: 0.49350095, y: 1, z: 0.4935012}
+  - {x: 0.49350095, y: 1, z: -0.4935012}
+  - {x: 0.77821827, y: -1, z: -0.77821875}
+  - {x: -0.77821875, y: -1, z: -0.77821875}
+  - {x: 0.49350095, y: 1, z: -0.4935012}
+  - {x: -0.49350142, y: 1, z: -0.4935012}
   m_Textures0:
-  - {x: 0.5064988, y: 3.9310102}
-  - {x: 1.4935012, y: 3.9310102}
-  - {x: 0.5064988, y: 2.9440079}
-  - {x: 1.4935012, y: 2.9440079}
-  - {x: -0.22178149, y: -0.373056}
-  - {x: -1.7782185, y: -0.373056}
-  - {x: -0.5064988, y: 1.6471083}
-  - {x: -1.4935012, y: 1.6471083}
-  - {x: -2.6592903, y: 0.2523568}
-  - {x: -4.215728, y: 0.2523568}
-  - {x: -2.9440079, y: 2.272521}
-  - {x: -3.9310102, y: 2.272521}
-  - {x: 4.215728, y: -0.029518582}
-  - {x: 2.6592903, y: -0.029518582}
-  - {x: 3.9310102, y: 1.9906456}
-  - {x: 2.9440079, y: 1.9906456}
-  - {x: 1.7782185, y: 0.595894}
-  - {x: 0.22178149, y: 0.595894}
-  - {x: 1.4935012, y: 2.6160583}
-  - {x: 0.5064988, y: 2.6160583}
+  - {x: -0.49350142, y: 0.4935012}
+  - {x: 0.49350095, y: 0.4935012}
+  - {x: -0.49350142, y: -0.4935012}
+  - {x: 0.49350095, y: -0.4935012}
+  - {x: 0.77821875, y: -1.0996989}
+  - {x: -0.77821827, y: -1.0996989}
+  - {x: 0.49350142, y: 0.92046547}
+  - {x: -0.49350095, y: 0.92046547}
+  - {x: 0.77821875, y: -1.0996988}
+  - {x: -0.77821875, y: -1.0996988}
+  - {x: 0.4935012, y: 0.92046547}
+  - {x: -0.4935012, y: 0.92046547}
+  - {x: 0.77821875, y: -1.0996987}
+  - {x: -0.77821875, y: -1.0996987}
+  - {x: 0.4935012, y: 0.9204655}
+  - {x: -0.4935012, y: 0.9204655}
+  - {x: 0.77821827, y: -1.0996989}
+  - {x: -0.77821875, y: -1.0996989}
+  - {x: 0.49350095, y: 0.92046547}
+  - {x: -0.49350142, y: 0.92046547}
   m_Textures2: []
   m_Textures3: []
   m_Tangents:
@@ -572,7 +572,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 5654f31872f1e934bbfad7ae492ea3ab, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -634,7 +634,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &8796459093504984182
 Transform:
@@ -644,7 +644,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8796459093504984189}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.07700014, y: 0.119999886, z: -0.63}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8796459093297324145}
@@ -688,15 +688,15 @@ MonoBehaviour:
   - m_Vertices: 00000000
   m_SharedTextures: []
   m_Positions:
-  - {x: 1.7782185, y: 0.22332859, z: 2.6442966}
-  - {x: 0.22178149, y: 0.22332859, z: 2.6442966}
-  - {x: 1.4935012, y: 2.2233286, z: 2.9290142}
-  - {x: 0.5064988, y: 2.2233286, z: 2.9290142}
+  - {x: 0.7782185, y: -1, z: -0.14235878}
+  - {x: -0.7782185, y: -1, z: -0.14235878}
+  - {x: 0.4935012, y: 1, z: 0.14235878}
+  - {x: -0.4935012, y: 1, z: 0.14235878}
   m_Textures0:
-  - {x: 1.7782185, y: 0.59378076}
-  - {x: 0.22178149, y: 0.59378076}
-  - {x: 1.4935012, y: 2.613945}
-  - {x: 0.5064988, y: 2.613945}
+  - {x: 0.7782185, y: -1.0100821}
+  - {x: -0.7782185, y: -1.0100821}
+  - {x: 0.4935012, y: 1.0100821}
+  - {x: -0.4935012, y: 1.0100821}
   m_Textures2: []
   m_Textures3: []
   m_Tangents:
@@ -798,7 +798,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &8796459094120141963
 Transform:
@@ -808,7 +808,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8796459094120141966}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.1500001, y: 0, z: 0}
+  m_LocalPosition: {x: 0.649, y: 0.119999886, z: 0.050938606}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8796459093297324145}
@@ -852,15 +852,15 @@ MonoBehaviour:
   - m_Vertices: 01000000
   m_SharedTextures: []
   m_Positions:
-  - {x: 1.9410568, y: 0.22332859, z: 4.215728}
-  - {x: 1.9410568, y: 0.22332859, z: 2.6592903}
-  - {x: 1.6563395, y: 2.2233286, z: 3.9310102}
-  - {x: 1.6563395, y: 2.2233286, z: 2.9440079}
+  - {x: 0.1423589, y: -1, z: 0.7782192}
+  - {x: 0.1423589, y: -1, z: -0.77821827}
+  - {x: -0.14235842, y: 1, z: 0.49350166}
+  - {x: -0.14235842, y: 1, z: -0.4935007}
   m_Textures0:
-  - {x: 4.215728, y: -0.05246864}
-  - {x: 2.6592903, y: -0.05246864}
-  - {x: 3.9310102, y: 1.9676956}
-  - {x: 2.9440079, y: 1.9676956}
+  - {x: 0.7782192, y: -1.0100821}
+  - {x: -0.77821827, y: -1.0100821}
+  - {x: 0.49350166, y: 1.0100821}
+  - {x: -0.4935007, y: 1.0100821}
   m_Textures2: []
   m_Textures3: []
   m_Tangents:
@@ -913,7 +913,7 @@ MeshRenderer:
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
   m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
+  m_SelectedEditorRenderState: 2
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
