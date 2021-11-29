@@ -10,11 +10,12 @@ TagManager:
   - Face02
   - Face03
   - Face04
+  - LiftFloor
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - XR Teleport
   - Water
   - UI
   - 
