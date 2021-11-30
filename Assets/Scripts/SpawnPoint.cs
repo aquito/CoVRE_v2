@@ -38,17 +38,23 @@ public class SpawnPoint : MonoBehaviour
         int localPlayerClientID = _realtime.clientID;
 
         //check that the clientID is not greater than the number of predefined spawn points
-        if (localPlayerClientID > spawnPoints.Count)
+        if (localPlayerClientID <= spawnPoints.Count)
         {
-            localPlayerClientID = 0;
+            // Use the clientID to position the player
+            playerXRRigposition.position = spawnPoints[localPlayerClientID].position;
+            playerXRRigposition.rotation = spawnPoints[localPlayerClientID].rotation;
+            
+        } else
+        {
+            // Use the clientID to position the player
+            playerXRRigposition.position = spawnPoints[0].position;
+            playerXRRigposition.rotation = spawnPoints[0].rotation;
         }
 
-        // Use the clientID to position the player
-        playerXRRigposition.position = spawnPoints[localPlayerClientID].position;
-        playerXRRigposition.rotation = spawnPoints[localPlayerClientID].rotation;
+        
 
         //overlay = loadingOverlay.GetComponent<LoadingOverlay>();
         //overlay.FadeIn();
-        loadingOverlay.SetActive(false);
+        loadingOverlay.SetActive(false); // disabling the black cube
     }
 }
