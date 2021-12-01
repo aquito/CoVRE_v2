@@ -12,12 +12,18 @@ public class RotateBlock : MonoBehaviour
 
     private GameManager gameManager;
 
+    private AudioSource audioSource;
+
+    private AudioClip audioClip;
+
     private void Start()
     {
         obeliskTransform = GetComponent<Transform>(); // get access to the object's transform
         obeliskRotation = obeliskTransform.rotation;
         ninetyDegreeRotation = Quaternion.Euler(0, -90, 0);
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        audioSource = GetComponent<AudioSource>();
+        audioClip = audioSource.GetComponent<AudioClip>();
 
     }
 
@@ -38,12 +44,15 @@ public class RotateBlock : MonoBehaviour
             //  if fromAngle.rotation.y > 270 && fromAngle.rotation.y < 360 then set start from 270
         }
 
-        StartCoroutine(RotateMe(ninetyDegreeRotation.eulerAngles, 0.8f)); // launching the coroutine; using coroutine to get a smooth rotation
-
+        
+        StartCoroutine(RotateMe(ninetyDegreeRotation.eulerAngles, 1.5f)); // launching the coroutine; using coroutine to get a smooth rotation
+        
     }
 
     IEnumerator RotateMe(Vector3 byAngles, float inTime) // this is the coroutine, copied from a post online :D
     {
+        audioSource.Play();
+
         var fromAngle = transform.rotation; // existing rotation
 
         var toAngle = Quaternion.Euler(transform.eulerAngles + byAngles); // the rotation we want to end with

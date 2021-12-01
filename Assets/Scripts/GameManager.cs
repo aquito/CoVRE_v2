@@ -13,9 +13,7 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private GameObject puzzleManagerObject;
 
-    [SerializeField]
-    private GameObject doorToOpen;
-
+ 
     [SerializeField]
     public GameObject normalRealTimeObject; // this needs to be the Realtime + VR Player game object in the scene
 
@@ -33,13 +31,7 @@ public class GameManager : MonoBehaviour
     {
        obeliskPuzzleManager = puzzleManagerObject.GetComponent<ObeliskPuzzleManager>();
 
-       // obeliskPuzzleManager.puzzleStartingPosition = obeliskLocation;
 
-       // obeliskPuzzleManager.normalRealTimeObject = normalRealTimeObject;
-
-       // obeliskPuzzleManager.doorToOpen = doorToOpen;
-
-       // obeliskPuzzleManager.blocks = blocks;
 
         realTime = normalRealTimeObject.GetComponent<Realtime>(); // to check the connection status we need access to the realtime component
         realTime.didConnectToRoom += Realtime_didConnectToRoom; // once the didConnectToRoom is true, run the Realtime_didConnectToRoom function
