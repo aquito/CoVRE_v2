@@ -40,18 +40,6 @@ public class ObeliskPuzzleManager : MonoBehaviour
 
     private bool isPuzzleSolved; // this helps in tracking the state of the puzzle
 
-    private Vector3 top01BlockPosition; // these are stored to be used in the puzzle alignment checks
-    private Vector3 top02BlockPosition;
-    private Vector3 top03BlockPosition;
-    private Vector3 bottomBlockPosition;
-
-    private Quaternion top01BlockRotation; // these enable to specify the starting rotations when instantiating the objects
-    private Quaternion top02BlockRotation;
-    private Quaternion top03BlockRotation;
-    private Quaternion bottomBlockRotation;
-
-    // private List<GameObject> blocks = new List<GameObject>(); // setting up an array so that changes to all blocks (e.g. switching material) can be done easily
-
     private AudioSource audioSource; // need to define this object to get access to it later
 
     public GameObject doorRightToOpen;
@@ -70,17 +58,11 @@ public class ObeliskPuzzleManager : MonoBehaviour
     private void Start()
     {
 
-        // top01BlockPosition = puzzleStartingPosition.position;
-        // top02BlockPosition = new Vector3(puzzleStartingPosition.position.x, puzzleStartingPosition.position.y - yAxisIncrement, puzzleStartingPosition.position.z);
-        // top03BlockPosition = new Vector3(puzzleStartingPosition.position.x, puzzleStartingPosition.position.y - yAxisIncrement * 2, puzzleStartingPosition.position.z);
-        // bottomBlockPosition = new Vector3(puzzleStartingPosition.position.x, puzzleStartingPosition.position.y - yAxisIncrement * 3, puzzleStartingPosition.position.z);
-
         topPuzzleCheck = topPuzzle.GetComponent<TopPuzzleCheck>();
         bottomPuzzleCheck = bottomPuzzle.GetComponent<BottomPuzzleCheck>();
 
         audioSource = GetComponent<AudioSource>(); // getting access to the audiosource component in the object to play audio clips
 
-       
     }
 
     /*
@@ -128,46 +110,6 @@ public class ObeliskPuzzleManager : MonoBehaviour
     }
     
 
-    private void OnTriggerEnter(Collider other)
-    {
-
-       if(other != null) // this some protective programming to make sure the collider has not moved away before the checks
-        {
-            // checking that the object colliding is the face of the block (using tags) and which block slot is it colliding with
-            if (other.gameObject.tag == "Face01") 
-            {
-                isTop01BlockCorrect = true; // setting this true so that all three can be checked together (see update function below)
-
-                Debug.Log("top block CORRECT!");
-            }
-
-
-            if (other.gameObject.tag == "Face02")
-            {
-                isTop02BlockCorrect = true;
-
-                Debug.Log("top 2nd block CORRECT!");
-            }
-
-            if (other.gameObject.tag == "Face03")
-            {
-                isTop03BlockCorrect = true;
-
-                Debug.Log("top 3rd block CORRECT!");
-            }
-
-
-            if (other.gameObject.tag == "Face04")
-            {
-                isBottomBlockCorrect = true;
-
-                Debug.Log("bottom block CORRECT!");
-            }
-        }
-        
-        
-
-    }
     */
 
     private void Update()
