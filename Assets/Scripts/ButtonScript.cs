@@ -20,14 +20,14 @@ public class ButtonScript : XRBaseInteractable
     protected override void Awake() // Create Listeners
     {
         base.Awake();
-        onHoverEnter.AddListener(StartPress); //Using a Deprecated command as I didn't want to have to wrap my head around the new onHoverEntered/ExitCommands
-        onHoverExit.AddListener(EndPress);
+        onHoverEntered.AddListener(StartPress); //Using a Deprecated command as I didn't want to have to wrap my head around the new onHoverEntered/ExitCommands
+        onHoverExited.AddListener(EndPress);
     }
 
     private void OnDestroy() //Destroy created listeners
     {
-        onHoverEnter.RemoveListener(StartPress);
-        onHoverExit.RemoveListener(EndPress);
+        onHoverEntered.RemoveListener(StartPress);
+        onHoverExited.RemoveListener(EndPress);
     }
 
     private void StartPress(XRBaseInteractor interactor) //Checks the height of the hand while the button is "active"
