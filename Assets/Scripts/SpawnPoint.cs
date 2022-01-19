@@ -24,8 +24,7 @@ public class SpawnPoint : MonoBehaviour
     private void Start()
     {
         
-        playerXRRigposition = gameObject.GetComponent<Transform>();
-        
+        playerXRRigposition = gameObject.GetComponent<Transform>();   
         
 
     }
