@@ -14,27 +14,28 @@ public class PedestalManager : MonoBehaviour
     [SerializeField]
     private GameObject greenPedestal;
 
-    [SerializeField]
-    private Material greenPedestalActiveMaterial;
+    
+    //[SerializeField]
+    //private Material greenPedestalActiveMaterial;
 
-    private Material greenPedestalDefaultMaterial;
+    //private Material greenPedestalDefaultMaterial;
 
 
     [SerializeField]
     private GameObject redPedestal;
 
-    [SerializeField]
-    private Material redPedestalActiveMaterial;
+    //[SerializeField]
+    //private Material redPedestalActiveMaterial;
 
-    private Material redPedestalDefaultMaterial;
+    //private Material redPedestalDefaultMaterial;
 
     [SerializeField]
     private GameObject yellowPedestal;
 
-    [SerializeField]
-    private Material yellowPedestalActiveMaterial;
+   // [SerializeField]
+    //private Material yellowPedestalActiveMaterial;
 
-    private Material yellowPedestalDefaultMaterial;
+    //private Material yellowPedestalDefaultMaterial;
 
     /*
     [SerializeField]
@@ -74,14 +75,14 @@ public class PedestalManager : MonoBehaviour
     private void Start()
     {
        // defining these objects so that they can be changed/activated based on player interactions
-        greenPedestalDefaultMaterial = greenPedestal.GetComponent<MeshRenderer>().material;
+        //greenPedestalDefaultMaterial = greenPedestal.GetComponent<MeshRenderer>().material;
         greenSocketInteractor = greenPedestal.GetComponentInChildren<XRSocketInteractor>();
 
        // redPedestalDefaultMaterial = redPedestal.GetComponent<MeshRenderer>().material;
-      //  redSocketInteractor = redPedestal.GetComponentInChildren<XRSocketInteractor>();
+        redSocketInteractor = redPedestal.GetComponentInChildren<XRSocketInteractor>();
 
        // yellowPedestalDefaultMaterial = yellowPedestal.GetComponent<MeshRenderer>().material;
-       // yellowSocketInteractor = yellowPedestal.GetComponentInChildren<XRSocketInteractor>();
+        yellowSocketInteractor = yellowPedestal.GetComponentInChildren<XRSocketInteractor>();
 
      
 
@@ -107,17 +108,21 @@ public class PedestalManager : MonoBehaviour
 
         if (isGreen01Active && isGreen02Active)
         {
-            greenPedestal.GetComponent<MeshRenderer>().material = greenPedestalActiveMaterial;
+            greenPedestal.GetComponent<RaisePedestal>().MoveUp();
+           // greenPedestal.GetComponent<MeshRenderer>().material = greenPedestalActiveMaterial;
             greenSocketInteractor.socketActive = true;
         }
         else if(isRed01Active && isRed02Active)
         {
-            redPedestal.GetComponent<MeshRenderer>().material = redPedestalActiveMaterial;
+            redPedestal.GetComponent<RaisePedestal>().MoveUp();
+            //redPedestal.GetComponent<MeshRenderer>().material = redPedestalActiveMaterial;
             redSocketInteractor.socketActive = true;
         }
         else if(isYellow01Active && isYellow02Active)
         {
-            yellowPedestal.GetComponent<MeshRenderer>().material = yellowPedestalActiveMaterial;
+
+            //yellowPedestal.GetComponent<MeshRenderer>().material = yellowPedestalActiveMaterial;
+            yellowPedestal.GetComponent<RaisePedestal>().MoveUp();
             yellowSocketInteractor.socketActive = true;
         }
 
