@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: 6483232365513622769}
   - component: {fileID: 7375614724128541509}
   - component: {fileID: 6705115864714114480}
+  - component: {fileID: 1477045925287594864}
   m_Layer: 0
   m_Name: PedestalActivator_Green
   m_TagString: Untagged
@@ -442,6 +443,8 @@ MonoBehaviour:
   _components:
   - componentID: 1
     component: {fileID: 6705115864714114480}
+  - componentID: 2
+    component: {fileID: 1477045925287594864}
   _childViews: []
 --- !u!114 &6705115864714114480
 MonoBehaviour:
@@ -455,3 +458,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c1eb00882167174aabd9d6739a36c25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1477045925287594864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6483232365513622278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1029778088, guid: c424820a8880b8845bda10ec0b41507e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolate: 1
+  _syncPosition: 1
+  _syncRotation: 1
+  _syncScale: 1
+  _syncVelocity: 1
+  _maintainOwnershipWhileSleeping: 0
