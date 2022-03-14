@@ -133,8 +133,24 @@ public class PedestalManager : MonoBehaviour
         }
         */
 
-        
 
+        //For Debug purposes
+        if (Input.GetKeyDown(KeyCode.G))
+        {
+
+            greenPedestal.GetComponent<RaisePedestal>().MoveUp();
+            
+        }
+
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            redPedestal.GetComponent<RaisePedestal>().MoveUp();
+        }
+
+        if (Input.GetKeyDown(KeyCode.Y))
+        {
+            yellowPedestal.GetComponent<RaisePedestal>().MoveUp();
+        }
 
     }
 

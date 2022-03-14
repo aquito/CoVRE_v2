@@ -40,11 +40,11 @@ public class Puzzle2Manager : MonoBehaviour
         // instatiating so that they can me made into realtime components by normal (if understood correctly)
         green01 = Realtime.Instantiate(greenActivator.name);
         green01.transform.Translate(greenActivator01Slot.position);
-        //green01.transform.SetParent(greenActivator01Slot);
+        green01.transform.SetParent(greenActivator01Slot);
 
         green02 = Realtime.Instantiate(greenActivator.name);
         green02.transform.Translate(greenActivator02Slot.position);
-        //green02.transform.SetParent(greenActivator02Slot);
+        green02.transform.SetParent(greenActivator02Slot);
 
     }
 
@@ -70,11 +70,13 @@ public class Puzzle2Manager : MonoBehaviour
 
         }
 
+        /*
         //For Debug purposes
         if (Input.GetKeyDown(KeyCode.G))
         {
-            green01.GetComponent<SwitchActivatorMaterial>().Switch();
-            green02.GetComponent<SwitchActivatorMaterial>().Switch();
+
+            //green01.GetComponent<SwitchActivatorMaterial>().Switch();
+            // green02.GetComponent<SwitchActivatorMaterial>().Switch();
         }
 
         if (Input.GetKeyDown(KeyCode.R))
@@ -88,6 +90,7 @@ public class Puzzle2Manager : MonoBehaviour
             yellow01.GetComponent<SwitchActivatorMaterial>().Switch();
             yellow02.GetComponent<SwitchActivatorMaterial>().Switch();
         }
+        */
 
     }
 
