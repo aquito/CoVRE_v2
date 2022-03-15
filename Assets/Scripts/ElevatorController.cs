@@ -9,7 +9,7 @@ using UnityEngine.UI;
 public class ElevatorController : MonoBehaviour
 {
 
-    public Text inBounds;
+    //public Text inBounds;
     public Animator animator;
 
     public GameObject PlayerObject; 
@@ -48,7 +48,7 @@ public class ElevatorController : MonoBehaviour
 
         CountPlayers();
 
-        inBounds.text = "Players on Lift " + PlayersOnLift + "/" + MaxPlayers;
+        //inBounds.text = "Players on Lift " + PlayersOnLift + "/" + MaxPlayers;
 
        
     }

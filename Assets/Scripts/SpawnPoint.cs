@@ -49,11 +49,11 @@ public class SpawnPoint : MonoBehaviour
             playerXRRigposition.position = spawnPoints[0].position;
             playerXRRigposition.rotation = spawnPoints[0].rotation;
         }
-
+        //Boolean, xr ray, button
         
 
         //overlay = loadingOverlay.GetComponent<LoadingOverlay>();
         //overlay.FadeIn();
-        loadingOverlay.SetActive(false); // disabling the black cube
+        //loadingOverlay.SetActive(false); // disabling the black cube
     }
 }
