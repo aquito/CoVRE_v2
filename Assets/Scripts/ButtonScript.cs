@@ -21,15 +21,15 @@ public class ButtonScript : XRBaseInteractable
     protected override void Awake()
     {
         base.Awake();   // Sets Colliders from XRBaseInteractor     
-        onHoverEnter.AddListener(StartPress); //Unsure how to use new commands
-        onHoverExit.AddListener(EndPress);
+        onHoverEntered.AddListener(StartPress); //Unsure how to use new commands
+        onHoverExited.AddListener(EndPress);
     }
          
 
     private void OnDestroy() //Destroy created listeners
     {
-        onHoverEnter.RemoveListener(StartPress);
-        onHoverExit.RemoveListener(EndPress);
+        onHoverEntered.RemoveListener(StartPress);
+        onHoverExited.RemoveListener(EndPress);
     }
 
     private void Start()
