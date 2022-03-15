@@ -77,3 +77,6 @@ crashlytics-build.properties
 *.log
 *.log
 *.log
+Logs/shadercompiler-UnityShaderCompiler.exe9.log
+*.log
+*.log
