@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4650389961967668781
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4650389961967668782}
+  - component: {fileID: 4650389961967668783}
+  m_Layer: 0
+  m_Name: PedestalPuzzleManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4650389961967668782
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4650389961967668781}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4650389961967668783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4650389961967668781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d16b7e454bf7494459c4ee605df0ac5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  greenPedestal: {fileID: 0}
+  greenPedestalActiveMaterial: {fileID: 2100000, guid: b90332b2d11eb984ca58c74178a62cdb, type: 2}
+  redPedestal: {fileID: 0}
+  redPedestalActiveMaterial: {fileID: 2100000, guid: f5c41f35702e66341bc5ec9fc3150827, type: 2}
+  yellowPedestal: {fileID: 0}
+  yellowPedestalActiveMaterial: {fileID: 2100000, guid: 1ef75f73331b77f4e8081381373a4643, type: 2}
+  pedestalActivatorGreen01: {fileID: 0}
+  pedestalActivatorGreen02: {fileID: 0}
+  pedestalActivatorRed01: {fileID: 0}
+  pedestalActivatorRed02: {fileID: 0}
+  pedestalActivatorYellow01: {fileID: 0}
+  pedestalActivatorYellow02: {fileID: 0}
