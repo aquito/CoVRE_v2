@@ -77,6 +77,11 @@ crashlytics-build.properties
 *.log
 *.log
 *.log
+Logs/shadercompiler-UnityShaderCompiler.exe9.log
+<<<<<<< HEAD
+*.log
+*.log
+=======
 Logs/shadercompiler-UnityShaderCompiler.exe0.log
 Logs/shadercompiler-UnityShaderCompiler.exe1.log
 Logs/shadercompiler-UnityShaderCompiler.exe10.log
@@ -89,3 +94,4 @@ Logs/shadercompiler-UnityShaderCompiler.exe6.log
 Logs/shadercompiler-UnityShaderCompiler.exe7.log
 Logs/shadercompiler-UnityShaderCompiler.exe8.log
 Logs/shadercompiler-UnityShaderCompiler.exe9.log
+>>>>>>> Kerwyn-Branch
